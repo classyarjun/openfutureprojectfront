@@ -1,0 +1,191 @@
+/* General Styles */
+.service-intro {
+    margin-bottom: 2rem;
+    text-align: left;
+    animation: fadeInUp 1s ease-in-out;
+  }
+   
+  .service-intro h3 {
+    font-size: 1.5rem;
+    color: #080808;
+    margin: 0 0 0.5rem;
+  }
+   
+  .service-intro h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin: 0;
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+   
+  /* Slider Styles */
+  .service-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+   
+  .service-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+   
+  /* Slide container for individual slides */
+  .service-slide {
+    min-width: 100%; /* Each slide takes full width for responsiveness */
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+   
+  /* Service Card Styles */
+  .service-card {
+    background: #f8f8f8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    width: 100%; /* Full width for responsiveness */
+    padding: 0;
+    text-align: center;
+    margin: 0 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+   
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+   
+  @media (min-width: 768px) {
+    .service-card {
+      width: calc(33.33% - 20px); /* Adjust width for larger screens */
+    }
+  }
+   
+  @media (max-width: 767px) {
+    .service-card {
+      margin: 0 5px; /* Reduced margin for smaller screens */
+    }
+  }
+   
+  /* Image Container Styles */
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+   
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    margin: 0;
+    transition: transform 0.3s ease;
+  }
+   
+  /* Overlay Styles */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(10%);
+  }
+   
+  .service-card:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+   
+  .service-card:hover .image-container img {
+    transform: scale(1.1);
+  }
+   
+  /* Arrow Navigation */
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+   
+  .slider-arrow.left {
+    left: 10px;
+  }
+   
+  .slider-arrow.right {
+    right: 10px;
+  }
+   
+  .slider-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+  }
+   
+  /* Dots Navigation */
+  .slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+   
+  .slider-dots span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+   
+  .slider-dots span.active {
+    background-color: #2d39ec;
+  }
+   
+  .slider-dots span:hover {
+    background-color: #2d39ec;
+    transform: scale(1.2);
+  }
+   
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+   
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+   

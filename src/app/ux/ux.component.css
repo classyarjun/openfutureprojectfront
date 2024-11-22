@@ -1,0 +1,303 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Container */
+.header-container {
+  position: relative;
+  text-align: center;
+  height: 600px;
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.header-container:hover .header-image {
+  transform: scale(1.1);
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.header-content p {
+  font-size: 2rem;
+  animation: slideUp 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row-reverse; /* Image on the right */
+}
+
+/* Split Image Container */
+.split-image-container {
+  position: relative;
+  display: flex;
+  width: 600px;
+  height: 525px;
+  aspect-ratio: 5 / 4;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.split {
+  flex: 1;
+  background-image: url('../../assets/header images/Services Images for BG/Responsive UIUX.jpg');
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+}
+
+.split.left {
+  clip-path: inset(40px 5% 1px 1px);
+  background-position: left center;
+}
+
+.split.right {
+  clip-path: inset(1px 1px 40px 5%);
+  background-position: right center;
+}
+
+/* Overlay Text */
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 50, 0.7);
+  color: white;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-text:hover {
+  opacity: 1;
+}
+
+/* Text Content (Left Side) */
+.right-side {
+  width: 45%;
+}
+
+.right-side h1 {
+  font-size: 2.5rem;
+  color: #002a5a;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease;
+}
+
+.right-side p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  animation: fadeIn 2.5s ease;
+}
+
+/* Key Features Section */
+.key-features-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.key-features-section h2 {
+  font-size: 2.5rem;
+  color: #002a5a;
+  margin-bottom: 40px;
+  animation: fadeIn 2s ease;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  color: #002a5a;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* SAP Offerings Section */
+.sap-offerings-container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.sap-heading {
+  color: rgb(7, 181, 224);
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* Grid Layout */
+.sap-offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.sap-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom: 10px solid #1d71b8;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -1px;
+}
+
+.number-square {
+  width: 40px;
+  height: 40px;
+  background-color: #1d71b8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 15px auto;
+}
+
+.sap-card h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Hover text styling */
+.hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(44, 41, 54, 0.815);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.sap-card:hover .hover-text {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-container {
+      flex-direction: column;
+  }
+
+  .split-image-container,
+  .right-side {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 20px;
+  }
+
+  .header-content h1 { font-size: 2rem; }
+  .header-content p { font-size: 1rem; }
+
+  .features-grid {
+      flex-direction: column;
+  }
+
+  .feature-card {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content h1 { font-size: 1.5rem; }
+  .header-content p { font-size: 0.9rem; }
+}
+.right-side h1, .sap-heading {
+  background: linear-gradient(90deg, #08086d, #4a90e2, #bad7f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

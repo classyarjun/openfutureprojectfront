@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <app-jobs-navbar></app-jobs-navbar>
+
+  <div class="position-relative container-fluid py-md-6 py-5  " style="margin-top: 100px;">
+    <div class="shape-left-top z-index-1" style="background-image: url(&quot;img/1.png&quot;); width: 30%;"></div>
+    <div class="shape-right-bottom z-index-1"
+      style="background-image: url(&quot;img/1-bottom.png&quot;); width: 30%; opacity: 0.4;"></div>
+    <div class="container text-center position-relative z-index-3 ">
+      <h1 class="display-5 fw-medium mt-sm-5 ">Find <span class="fw-semibold text-decoration-underline">Jobs</span>
+        Near You
+      </h1>
+      <h4 class="fw-medium">Search among 60,000+ active jobs across the world</h4>
+      <div class="shadow-md z-index-2 position-relative jobs-form-area mb-4 px-4 py-3 bg-white mt-5">
+        <form action="/job-openning" method="get">
+          <div class="row gx-0">
+            <div class="col-md-4 mb-md-0 mb-3">
+              <div class="input-group"><span class="input-group-text border-0 bg-transparent ps-md-0"><i
+                    class="bi bi-search fs-1 text-theme"></i></span> <input type="text"
+                  placeholder="Enter skills/designations" class="form-control border-0" data-vv-id="1"
+                  aria-required="true" aria-invalid="false"></div>
+              <div class="auto-suggestion shadow-md rounded-5"></div>
+            </div>
+            <div class="col-md-auto d-md-block d-none border-right">&nbsp;</div>
+            <div class="col-md mb-md-0 mb-3"><select class="form-select experience border-0" data-vv-id="2"
+                aria-required="true" aria-invalid="false">
+                <option value="0">Search by experience</option>
+                <option value="1">0-2 Years</option>
+                <option value="2">2-5 Years</option>
+                <option value="3">5-8 Years</option>
+                <option value="4">8-12 Years</option>
+                <option value="5">12+ Years</option>
+              </select>
+            </div>
+
+            <div class="col-md-auto d-md-block d-none border-right">&nbsp;</div>
+            <div class="col-md mb-md-0 mb-3">
+              <div class="input-group"><span class="input-group-text border-0 bg-transparent">
+                  <i class="bi bi-geo-alt-fill fs-1 text-theme"></i></span> <select name="country_id" id="country_id"
+                  required="required" oninvalid="this.setCustomValidity('Please select Country')"
+                  oninput="setCustomValidity('')" class="form-select border-0 input" data-vv-id="3" aria-required="true"
+                  aria-invalid="false">
+                  <option value="0">Country</option>
+                  <option value="1"> India </option>
+                  <option value="2"> Singapore </option>
+                  <option value="3"> Malaysia </option>
+                  <option value="4"> Hong Kong </option>
+                  <option value="5"> United States </option>
+                  <option value="6"> Thailand </option>
+                  <option value="8"> Indonesia </option>
+                  <option value="189"> Vietnam </option>
+                  <option value="38"> Cape Verde </option>
+                  <option value="52"> Czech Republic </option>
+                  <option value="66"> France </option>
+                  <option value="70"> Germany </option>
+                  <option value="86"> Italy </option>
+                  <option value="177"> Turkey </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-md-auto d-grid">
+              <button class="btn bg-blue-gradient text-white btn-block border-1 rounded-pill">
+               <a class="text-white text-decoration-none" href="/job-openning"> Find Jobs</a>
+              </button>
+            </div>
+
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ! =====================  second block ========================================================-->
+  <div class="py-5 bg-theme-light position-relative">
+    <div class="tech-mesh-offering-top"></div>
+    <div class="tech-mesh-offering-bottom"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 text-center text-lg-start">
+          <h2 class="display-5 fw-bold">Discover Limitless Career Possibilities: Openfuture Technologies Jobs App is
+            Here</h2>
+          <p class="mb-4 fs-5 text-black">Are you on the lookout for exciting job opportunities that align with your
+            skills and aspirations? Look no further! Welcome to Nityo Jobs, your trusted companion on the journey to
+            your dream career.</p>
+
+          <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+            <a href="https://play.google.com/store/apps/details?id=com.nityojobs" target="_blank">
+              <img src="https://careers.nityo.com/img/nityo-jobs-app/google-play.png" alt="Google Play"
+                class="img-fluid">
+            </a>
+            <a href="https://apps.apple.com/in/app/nityojobs/id6467858566" target="_blank">
+              <img src="https://careers.nityo.com/img/nityo-jobs-app/app-store-2.png" alt="App Store" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4 d-flex justify-content-center">
+          <img src="/assets/career inside images/mobileapp.png" alt="Mobile Screen 1"
+            class="mobile-screen img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-1 position-relative overflow-hidden">
+    <div class="container my-4 pt-xl-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <h2 class="display-5 fw-bold">Connecting You to a World of IT Career Opportunities</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container-xxl my-4">
+      <div class="row justify-content-center mt-4">
+        <div class="col-lg-3 col-md-6 choose-us-card-two">
+          <div class="choose-us-style-two mt-0">
+            <div class="thumb"><img src="/assets/career inside images/opportunities.jpg" alt="Thumb"
+                class="w-100">
+              <div class="title shadow-md ps-2 pe-3 py-1 ms-0 bg-blue-gradient justify-content-center">
+                <div class="top p-4">
+                  <h4 class="text-white text-center fw-semibold mb-0" style="font-size: 17px !important;">Unveiling
+                    Opportunities <br>Beyond Borders</h4>
+                </div>
+              </div>
+              <div class="overlay text-center">
+                <div class="content">
+                  <p>At OpenFuture Technologies Private Limited, we believe talent has no boundaries. Our
+                    platform unlocks a world of career possibilities, connecting you with opportunities that match
+                    your skills and aspirations, wherever you are.Join us and take the next step
+                    in your journey with OpenFuture Technologies
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 choose-us-card-two">
+          <div class="choose-us-style-two mt-0">
+            <div class="thumb"><img src="/assets/career inside images/empowering your journey.jpg" alt="Thumb"
+                class="w-100">
+              <div class="title shadow-md ps-2 pe-3 py-1 ms-0 bg-blue-gradient justify-content-center">
+                <div class="top p-4">
+                  <h4 class="text-white text-center fw-semibold mb-0" style="font-size: 17px !important;">Empowering
+                    Your <br>Journey</h4>
+                </div>
+              </div>
+              <div class="overlay text-center">
+                <div class="content">
+                  <p>At OpenFuture Technologies Private Limited, our platform goes beyond a typical job search
+                    tool—it's your dedicated career partner. With tailored insights and timely updates, we ensure
+                    you're always ahead in discovering the best opportunities that align with your goals.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 choose-us-card-two">
+          <div class="choose-us-style-two mt-0">
+            <div class="thumb"><img src="/assets/career inside images/Seamless Application.jpg" alt="Thumb"
+                class="w-100">
+              <div class="title shadow-md ps-2 pe-3 py-1 ms-0 bg-blue-gradient justify-content-center">
+                <div class="top p-4">
+                  <h4 class="text-white text-center fw-semibold mb-0" style="font-size: 17px !important;">Seamless
+                    Application, <br>Effortless Tracking</h4>
+                </div>
+              </div>
+              <div class="overlay text-center">
+                <div class="content">
+                  <p>Applying for your dream IT job has never been simpler. With the OpenFuture Technologies
+                    App, you can apply directly to roles from wherever you are. Effortlessly track your
+                    applications, saving time and energy while exploring exciting new opportunities in the IT
+                    field</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 choose-us-card-two">
+          <div class="choose-us-style-two mt-0">
+            <div class="thumb"><img src="/assets/career inside images/Aworld of IT Awaits you.jpg" alt="Thumb"
+                class="w-100">
+              <div class="title shadow-md ps-2 pe-3 py-1 ms-0 bg-blue-gradient justify-content-center">
+                <div class="top p-4">
+                  <h4 class="text-white text-center fw-semibold mb-0" style="font-size: 17px !important;">A World of
+                    IT <br>Awaits You</h4>
+                </div>
+              </div>
+              <div class="overlay text-center">
+                <div class="content">
+                  <p>Join the OpenFuture Technologies WhatsApp group now and start a journey that knows no
+                    boundaries. Whether you're looking to explore new horizons or elevate your career, this
+                    group is your gateway to a world of IT opportunities.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shape-left-top" style="background-image: url(&quot;/assets/front/img/shape/1.png&quot;);">&nbsp;
+    </div>
+  </div>
+
+  <div class="container-xxl">
+    <div class="row">
+      <div class="col-lg-6 mb-5">
+        <div class="job-bg px-4 pt-4 h-100">
+          <div class="row h-100">
+            <div class="col-md-5 order-md-2 d-flex align-items-center">
+              <div>
+                <h3 class="text-black">Stay Connected &amp; Get Updates On Your Dream Job</h3>
+                <h2 class="fw-bold text-black">Join Openfuture Technology Instagram Page</h2> <a
+                  href="https://www.instagram.com/openfuture_technologies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="btn btn-light mb-4">Join Now!</a>
+
+              </div>
+            </div>
+            <div class="col-md-7 d-flex align-items-end"><img src="/assets/career inside images/instagramlink.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6 mb-5">
+        <div class="job-bg px-4 pt-4 h-100">
+          <div class="row h-100">
+            <div class="col-md-6 d-flex align-items-center">
+              <div class="text-center">
+                <h3 class="text-black">Stay Connected &amp; Get Updates On Your Dream Job</h3>
+                <h2 class="fw-bold text-black">Join Nityo Infotech WhatsApp Channel</h2>
+
+                <a href="https://wa.me/917219389550?text=Hello,%20I%20want%20to%20join!" target="_blank" rel="noopener" class="btn btn-light mb-4">
+                  Join Now!
+              </a>
+
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-end"><img src="/assets/career inside images/whatsapplink.png"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- </div>
+  </div> -->
+
+</body>
+
+</html>

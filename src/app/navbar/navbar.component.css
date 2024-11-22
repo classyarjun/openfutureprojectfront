@@ -1,0 +1,119 @@
+/* =====================desktopnav css======== */
+ 
+@media (max-width: 991px) {
+  .desktopnav {
+    display: none;
+  }
+}
+ 
+.navbar{
+background-color: rgba(240, 248, 255, 0.805);
+  margin: 0px;
+  padding: 0px;
+ 
+  }
+   
+  .nav-item a{
+    color: black;
+  }
+  .nav-item a:hover{
+    background-color: rgba(70, 135, 167, 0.833);
+  color: rgb(255, 255, 255);
+ 
+  }
+ 
+ 
+ 
+  .submenu {
+    display: none;
+    position: fixed;
+    background-color:rgba(70, 135, 167, 0.833);
+    width: 100%;
+    left: 0;
+    top: 11.5%;
+    z-index: 1000;
+  }
+  .subitem{
+    padding: 2rem;
+  }
+ 
+  .nav-item:hover .submenu {
+    display: block;
+  }
+ 
+ 
+ 
+ 
+  .info-item {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.info-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff;
+}
+.info-item a{
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  font-weight: 600;
+  font-size:large;
+  color: rgb(255, 255, 255);
+ 
+}
+ 
+.info-item a:hover {
+  color: rgba(70, 135, 167, 0.833);  
+  background-color:rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 5px;
+}
+ 
+.info-item a:hover i {
+  color: rgba(70, 135, 167, 0.833);  
+  background-color:rgb(255, 255, 255);
+}
+ 
+
+ 
+/* =====================mobilenav css======== */
+ 
+@media (min-width: 991px) {
+  .mobilenav {
+    display: none;
+  }
+}
+ 
+.mobilenav {
+  background-color: rgba(255, 255, 255, 0.585);
+}
+ 
+.mainwrapper {
+  height: 90%;
+  position: fixed;
+  left: 0;
+  top: 13.8%;
+  padding: 1rem;
+}
+.toggle1 {
+  border: none;
+  margin-left: 10px;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 1px 10px 1px 10px;
+}
+ 
+.nav_wrapper a{
+  color: black;
+}
+.nav_wrapper a:hover {
+  background-color: rgba(70, 135, 167, 0.833);  
+  color:rgb(255, 255, 255);
+}
+ 
+ 
+ 
+ 

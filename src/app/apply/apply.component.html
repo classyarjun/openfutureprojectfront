@@ -1,0 +1,88 @@
+<div class="containe">
+  <div class="image-container">
+    <div class="form-container">
+      <h3>Apply Job</h3>
+
+      <form [formGroup]="applyForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input id="firstName" formControlName="firstName" type="text" class="form-control" required />
+          <div *ngIf="applyForm.controls['firstName'].invalid && applyForm.controls['firstName'].touched" class="text-danger">
+            First name is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" formControlName="lastName" type="text" class="form-control" required />
+          <div *ngIf="applyForm.controls['lastName'].invalid && applyForm.controls['lastName'].touched" class="text-danger">
+            Last name is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" formControlName="email" type="email" class="form-control" required />
+          <div *ngIf="applyForm.controls['email'].invalid && applyForm.controls['email'].touched" class="text-danger">
+            A valid email is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input id="country" formControlName="country" type="text" class="form-control" required />
+          <div *ngIf="applyForm.controls['country'].invalid && applyForm.controls['country'].touched" class="text-danger">
+            Country is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mobileNumber">Mobile Number</label>
+          <input id="mobileNumber" formControlName="mobileNumber" type="number" class="form-control" required />
+          <div *ngIf="applyForm.controls['mobileNumber'].invalid && applyForm.controls['mobileNumber'].touched" class="text-danger">
+            Mobile number is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input id="location" formControlName="location" type="text" class="form-control" required />
+          <div *ngIf="applyForm.controls['location'].invalid && applyForm.controls['location'].touched" class="text-danger">
+            Location is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="cv">Upload CV (PDF/JPEG)</label>
+          <input type="file" id="cv" (change)="onFileChange($event)" class="form-control" />
+        </div>
+
+        <button type="submit" [disabled]="applyForm.invalid" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Popup for Success -->
+  <div class="modal" tabindex="-1" role="dialog" [ngClass]="{'show d-block': showSuccessPopup}" *ngIf="showSuccessPopup">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Success</h5>
+          <button type="button" class="close" (click)="closePopup()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Your form has been submitted successfully.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" (click)="closePopup()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 

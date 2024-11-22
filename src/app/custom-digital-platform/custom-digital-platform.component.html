@@ -1,0 +1,99 @@
+
+  <!-- Header Section -->
+  <!-- Main Header Container -->
+  <div class="header-container">
+    <img src="/assets/aboutUsAll/About-Us images/Client Served.jpg" alt="Header Image" class="header-image" />
+    <!-- Centered Content -->
+    <div class="header-content">
+      <h1>Custom Digital Platforms</h1>
+      <p>solutions > Custom Digital Platforms</p>
+    </div>
+  </div>
+  <!-- Image and Content Section -->
+  <div class="content-container">
+    <!-- Left Side: Split Image with overlay text -->
+    <div class="main-container">
+      <div class="split-image-container">
+        <div class="split left"></div>
+        <div class="split right"></div>
+        <div class="overlay-text">
+          <h2> Custom Digital Platforms</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: Text Content -->
+    <div class="text-container">
+      <h2> Custom Digital Platforms</h2>
+
+
+      <p>At OpenFuture Technology Solutions, we specialize in building custom digital platforms
+        that align perfectly with your business goals. From sophisticated websites to advanced
+        mobile apps, our team develops bespoke solutions that address the specific needs of
+        your enterprise. We understand that every business is unique, and a one-size-fits-all
+        approach simply doesn’t cut it. Our platforms are designed with the primary objective of
+        enhancing your business's operational efficiency, streamlining workflows, and ensuring
+        an optimal user experience.
+        We blend cutting-edge technology with creativity to create digital platforms that not only
+        meet your functional requirements but also deliver a rich, engaging user experience. We
+        prioritize ease of navigation, responsiveness across devices, and robust performance
+        under heavy load. Each platform is crafted with your customers in mind, enhancing their
+        interaction with your brand and driving loyalty..</p>
+
+
+    </div>
+  </div>
+
+
+
+
+  <!-- Why Us Section -->
+  <section class="why-us">
+    <h2>Why Us?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Tailored Solutions for Unique Business Needs</h3>
+        <p>Every business has unique requirements, and a cookie-cutter approach won’t
+          drive the desired results. We understand this, which is why we create fully customized
+          digital platforms that align with your business goals.
+
+
+        </p>
+      </div>
+      <div class="card">
+        <h3> Cutting-Edge Technology & Innovation</h3>
+        <p>At OpenFuture, we stay on top of the latest technological advancements. We
+          leverage modern tools, frameworks, and programming languages to build innovative
+          platforms that give your business a competitive edge.
+
+
+
+
+        </p>
+      </div>
+      <div class="card">
+        <h3> Agile Development Process</h3>
+
+        <p>We follow an agile development process that ensures flexibility, transparency,
+          and timely delivery. Our team works closely with you to understand your business
+          objectives, provide regular updates, and make adjustments as needed throughout the
+          project lifecycle
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Offerings Section -->
+  <div class="sap-offerings-container">
+    <h2 class="sap-heading">WE OFFERINGS</h2>
+    <div class="sap-offerings-grid">
+      <div class="sap-card" *ngFor="let item of sapOfferings">
+        <div class="number-square">{{ item.number }}</div>
+        <h4>{{ item.title }}</h4>
+        <div class="info-icon"><span class="material-icons">></span></div>
+
+        <div class="hover-text">{{ item.description }}</div>
+      </div>
+
+    </div>
+  </div>

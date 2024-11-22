@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+ 
+<!-- Main Header Container -->
+<div class="header-container">
+  <img
+    src="../../assets/header images/Services Images for BG/Software Developer.jpg"
+    alt="Header Image"
+    class="header-image"
+  />
+ 
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Software Developer</h1>
+    <p>Services >Software Developer</p>
+  </div>
+</div>
+ 
+<div class="main-container">
+  <!-- Left side: Split Image with overlay text -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Software Developer</h2>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Right side: Text content -->
+  <div class="right-side">
+    <H1>Software Developer</H1>
+    <p>
+        At OpenFuture Technologies Private Limited, we provide comprehensive software
+        development services, crafting custom solutions tailored to your business needs. Our
+        team of skilled software developers is proficient in building high-performance
+        applications that streamline processes and drive innovation.
+        
+    </p>
+    <p>
+        At OpenFuture Technologies, we are committed to delivering software development
+        services that empower businesses to innovate, grow, and stay competitive in a
+        rapidly evolving digital landscape.
+        
+    </p>
+  </div>
+</div>
+ 
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">Software Developer Offerings</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of  Softwaredeveloper ">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

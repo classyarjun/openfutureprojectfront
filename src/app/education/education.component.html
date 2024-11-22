@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+  <img src="../../assets/Industries/Education.jpg" alt="Header Image" class="header-image" />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Education</h1>
+    <p>Industries > Education</p>
+  </div>
+</div>
+
+<div class="main-container">
+  <!-- Left side: Split Image with overlay text -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Education</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side: Text content -->
+  <div class="right-side">
+    <h1>Empowering Education Through Innovative Solutions</h1>
+    <p>
+      At OpenFuture Technologies Private Limited, we are dedicated to transforming the
+      education sector by providing cutting-edge solutions that enhance learning
+      experiences, streamline administrative processes, and foster engagement. Our
+      mission is to empower educational institutions to thrive in a digital-first world.
+    </p>
+  </div>
+</div>
+
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">Education Offerings</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of education">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

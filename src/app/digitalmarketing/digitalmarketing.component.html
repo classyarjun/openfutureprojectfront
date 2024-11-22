@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+  <img
+    src="../../assets/header images/Services Images for BG/Digital Marketing.jpg"
+    alt="Header Image"
+    class="header-image"
+  />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Digital Marketing</h1>
+    <p>Services > Digital Marketing</p>
+  </div>
+</div>
+
+<div class="main-container">
+  <!-- Left side: Text content -->
+  <div class="left-side">
+    <h1>Simplifying Banking Solutions and Transformation</h1>
+    <p>
+      At OpenFuture Technologies Private Limited, we offer comprehensive digital
+      marketing services designed to elevate your brand and drive measurable results.
+      Our data-driven strategies are tailored to meet your unique business goals, helping
+      you connect with your target audience and maximize your online presence.
+    </p>
+    <p>
+      At OpenFuture Technologies, we are dedicated to helping your business thrive in the
+      digital landscape through innovative marketing strategies that enhance brand
+      visibility and drive growth.
+    </p>
+  </div>
+
+  <!-- Right side: Split Image with overlay text -->
+  <div class="right-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Digital Marketing</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sap-offerings-container">
+  <h2 class="sap-heading text-center" >Digital Marketing</h2>
+  <div class="sap-offerings-grid p-5">
+    <div class="sap-card" *ngFor="let item of Digitalmarketing">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="full-container">
+  <!-- Left Section -->
+  <div class="left-section">
+    <h2>Welcome Back</h2>
+    <p>Login to continue accessing your dashboard</p>
+    <div class="illustration"></div>
+  </div>
+
+  <!-- Right Section -->
+  <div class="right-section">
+    <!-- Close Button -->
+    <button class="close-btn" (click)="navigateToHome()">&#10006;</button>
+
+    <!-- Form Heading -->
+    <h2> Admin Login</h2>
+
+    <!-- Form Container -->
+    <form (ngSubmit)="onLogin()" [formGroup]="loginForm">
+      <!-- Username Field -->
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          formControlName="username"
+          placeholder="Enter your username"
+          required
+        />
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          formControlName="password"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" [disabled]="loginForm.invalid">Login</button>
+
+      <!-- Error Message -->
+      <div class="error" *ngIf="loginError">{{ errorMessage }}</div>
+
+      <!-- Forgot Password Link -->
+      <div class="login-link">
+        <a href="#">Forgot your password?</a>
+      </div>
+    </form>
+  </div>
+</div>

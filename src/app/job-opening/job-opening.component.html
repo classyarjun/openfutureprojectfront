@@ -1,0 +1,168 @@
+<!-- Navbar Layout -->
+<app-jobs-navbar></app-jobs-navbar>
+
+<!-- Job Filter and Job Listing Section -->
+<div class="container-fluid position-relative">
+  <div class="tech-mesh-offering-top">&nbsp;</div>
+  <div class="tech-mesh-offering-bottom">&nbsp;</div>
+  <div class="container py-md-5 py-4 position-relative z-index-3">
+    <div class="row">
+      <!-- Filter Section -->
+      <div class="col-xl-3 col-md-4 mb-md-0 mb-4">
+        <div class="bg-white shadow-md py-3 px-2">
+          <h3 class="mx-3 fw-semibold">All Filters</h3>
+          <div class="accordion accordion-flush filter-accordion">
+            <!-- Work Mode Filter -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#workmode"
+                  class="accordion-button bg-transparent">
+                  Work Mode
+                </button>
+              </h2>
+              <div id="workmode" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <div class="form-check d-flex mb-2">
+                    <input type="checkbox" id="remote" class="form-check-input me-2 p-2" [(ngModel)]="filters['remote']"
+                      (change)="applyFilters()" />
+                    <label for="remote" class="form-check-label mb-0 small">Remote</label>
+                  </div>
+                  <div class="form-check d-flex mb-2">
+                    <input type="checkbox" id="hybrid" class="form-check-input me-2 p-2" [(ngModel)]="filters['hybrid']"
+                      (change)="applyFilters()" />
+                    <label for="hybrid" class="form-check-label mb-0 small">Hybrid</label>
+                  </div>
+                  <div class="form-check d-flex mb-2">
+                    <input type="checkbox" id="office" class="form-check-input me-2 p-2" [(ngModel)]="filters['office']"
+                      (change)="applyFilters()" />
+                    <label for="office" class="form-check-label mb-0 small">Work from office</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Filter -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#experience"
+                  class="accordion-button bg-transparent">
+                  Experience
+                </button>
+              </h2>
+              <div id="experience" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <div class="form-check d-flex mb-2">
+                    <input type="radio" name="experience" id="exp0-2" class="form-check-input me-2 p-2"
+                      value="0-1 years" [(ngModel)]="filters['experience']" (change)="applyFilters()" />
+                    <label for="exp0-2" class="form-check-label mb-0 small">0-1 years</label>
+                  </div>
+                  <div class="form-check d-flex mb-2">
+                    <input type="radio" name="experience" id="exp1-2" class="form-check-input me-2 p-2"
+                      value="2-3 years" [(ngModel)]="filters['experience']" (change)="applyFilters()" />
+                    <label for="exp1-2" class="form-check-label mb-0 small">2-3 years</label>
+                  </div>
+                  <div class="form-check d-flex mb-2">
+                    <input type="radio" name="experience" id="exp2-3" class="form-check-input me-2 p-2"
+                      value="4-5 years" [(ngModel)]="filters['experience']" (change)="applyFilters()" />
+                    <label for="exp2-3" class="form-check-label mb-0 small">4-5 years</label>
+                  </div>
+                  <div class="form-check d-flex mb-2">
+                    <input type="radio" name="experience" id="exp3-5" class="form-check-input me-2 p-2"
+                      value="6-7 years" [(ngModel)]="filters['experience']" (change)="applyFilters()" />
+                    <label for="exp3-5" class="form-check-label mb-0 small">6-7 years</label>
+                  </div>
+                  <div class="form-check d-flex mb-2">
+                    <input type="radio" name="experience" id="exp5" class="form-check-input me-2 p-2" value="8-9 years"
+                      [(ngModel)]="filters['experience']" (change)="applyFilters()" />
+                    <label for="exp5" class="form-check-label mb-0 small">8-9 years</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Salary Filter -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#salary"
+                  class="accordion-button bg-transparent">
+                  Salary
+                </button>
+              </h2>
+              <div id="salary" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <div class="form-check d-flex mb-2">
+                    <input type="radio" name="salary" id="1sal" class="form-check-input me-2 p-2" value="1"
+                      [(ngModel)]="filters['salary']" (change)="applyFilters()" />
+                    <label for="1sal" class="form-check-label mb-0 small">1-2 lakhs</label>
+                  </div>
+                  <div class="form-check d-flex mb-2">
+                    <input type="radio" name="salary" id="2sal" class="form-check-input me-2 p-2" value="2"
+                      [(ngModel)]="filters['salary']" (change)="applyFilters()" />
+                    <label for="2sal" class="form-check-label mb-0 small">3-5 lakhs</label>
+                  </div>
+                  <div class="form-check d-flex mb-2">
+                    <input type="radio" name="salary" id="3sal" class="form-check-input me-2 p-2" value="3"
+                      [(ngModel)]="filters['salary']" (change)="applyFilters()" />
+                    <label for="3sal" class="form-check-label mb-0 small">6-7 lakhs</label>
+                  </div>
+                  <div class="form-check d-flex mb-2">
+                    <input type="radio" name="salary" id="4sal" class="form-check-input me-2 p-2" value="4"
+                      [(ngModel)]="filters['salary']" (change)="applyFilters()" />
+                    <label for="4sal" class="form-check-label mb-0 small">8-9 lakhs</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job Listing Section -->
+      <div class="col-xl-9 col-md-8">
+        <div class="row align-items-center justify-content-md-between">
+          <div class="col-md-auto mb-3 text-black">
+            {{ currentPage }} of {{ totalPages }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-4" *ngFor="let job of currentJobs">
+            <div class="shadow-md z-index-2 position-relative p-md-4 p-3 jd-list-block">
+              <div class="row">
+                <div class="col">
+                  <span class="fs-3">{{ job.title }}</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-auto small text-secondary d-flex align-items-center">
+                  <i class="bi bi-geo-alt fs-4 me-1"></i> <span>{{ job.location }}</span>
+                </div>
+                <div class="col-md-auto small text-secondary d-flex align-items-center">
+                  <i class="bi bi-briefcase fs-4 me-1"></i><span>{{ job.experience }} Years</span>
+                </div>
+                <div class="col-12 d-flex">
+                  <p class="mb-0 text-black">Employment Type: {{ job.employmentType }}</p>
+                </div>
+                <div class="col-12 d-flex">
+                  <p class="mb-0 text-black">Work Model: {{ job.workModel }}</p>
+                </div>
+                <div class="col-12 d-flex">
+                  <p class="mb-0 text-black">Salary: {{ job.salary }} Lpa</p>
+                </div>
+
+                <div class="col-12 d-flex justify-content-end">
+                  <a href="/apply">
+                    <button class="btn-primary  justify-content-end p-1">Apply</button>
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="btn btn-primary" (click)="resetFilters()">Reset Filters</button>
+      </div>
+    </div>
+
+  </div>
+</div>

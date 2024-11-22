@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+  <img
+    src="../../assets/Industries/BFSI.jpg"
+    alt="Header Image"
+    class="header-image"
+  />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>BFSI</h1>
+    <p>Industries > BFSI</p>
+  </div>
+</div>
+
+<div class="main-container">
+  <!-- Left side: Split Image with overlay text -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>BFSI</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side: Text content -->
+  <div class="right-side">
+    <h1>Simplifying Banking Solutions and Transformation</h1>
+    <p>
+      The Banking, Financial Services, and Insurance (BFSI) sector has
+      experienced significant transformation and growth in the last decade.
+      Companies are ramping up their IT investments to boost profits, speed up
+      product launches, navigate regulatory changes, and meet evolving customer
+      demands.
+    </p>
+    <p>
+      At OpenFuture Technologies Private Limited, we combine extensive expertise
+      and advanced infrastructure to deliver tailored IT solutions for the BFSI
+      sector. Our commitment to proactive monitoring and management ensures
+      seamless and secure operations.
+    </p>
+  </div>
+</div>
+
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">BFSI Offerings</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of bfsi">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

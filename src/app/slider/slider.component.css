@@ -1,0 +1,189 @@
+/* ! Smooth transition effect */
+
+.carousel-item {
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  }
+
+  /* ! css for carasoul-image fixing */
+
+  .carousel-inner .image-slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 600px; */
+  }
+
+  /* ! Position next and prev buttons at the bottom */
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: auto;
+    bottom: 20px;
+  }
+
+  .carousel-control-prev {
+    left: 20px;
+  }
+
+  .carousel-control-next {
+    right: 20px;
+  }
+
+  /* ! Css for custom arrow of slider */
+
+  .custom-arrow {
+    /* Make the background transparent */
+    background-color: transparent;
+    /* Remove border */
+    border: none;
+    /* Adjust the font size for the arrows */
+    font-size: 2rem;
+    /* Change the arrow color */
+    color: rgb(255, 255, 255);
+  }
+
+  .custom-arrow:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  /* ! Animation for the content */
+
+  @keyframes slideInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .carousel-item.active .content {
+    animation: slideInUp 1s ease-out;
+  }
+
+  .carousel-item .content {
+    opacity: 0;
+  }
+
+  .carousel-item.active .content {
+    opacity: 1;
+  }
+
+  @media (max-width: 576px) {
+    .container {
+      height: 400px; /* Full screen height */
+      display: flex;
+      justify-content: flex-start; /* Horizontal center */
+      align-items: center; /* Vertical center */
+    }
+
+    .custom-arrow {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      min-height: 400px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 968px) {
+    .container {
+      height: 500px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 1460px) and (min-width: 992px) {
+    .container {
+      min-height: 680px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+
+  }
+
+  /* ! Css of content background */
+
+  .blackbg {
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    padding: 40px; /* Add some padding for spacing inside the content box */
+    border-radius:25px 25px ;
+
+  }
+  .whitebg
+  {
+    background-color: rgba(255, 255, 255, 0.742); /* Black background with 50% opacity */
+    padding: 80px; /* Add some padding for spacing inside the content box */
+    border-radius:25px 25px ;
+  }
+
+
+  /* ! Explorer btn css */
+  .btn {
+    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-width: 0.125em;
+    --curve-size: 0.5em;
+    --blur: 30px;
+    --bg:linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --color: #afffff;
+    color: var(--color);
+    cursor: pointer;
+
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: 0.5em 1.5em;
+    font-size: 14px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    clip-path: polygon( 0% var(--curve-size),
+      var(--curve-size) 0, 100% 0,100% calc(100% - var(--curve-size)),
+      calc(100% - var(--curve-size)) 100%, 0 100% );
+    transition: color 250ms;
+  }
+
+  .btn::after,
+  .btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+
+  .btn::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+  }
+
+  .btn:where(:hover, :focus) {
+    color: #fff;
+  }
+
+  @media (max-width: 2560px) and (min-width: 992px) {
+    .container {
+      min-height: 670px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+
+.next-btn[_ngcontent-ng-c2323094090] {
+  right: 20px;
+  display: none;
+}

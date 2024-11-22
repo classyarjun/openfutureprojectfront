@@ -1,0 +1,76 @@
+
+    <!-- Header Section -->
+    <div class="header-container">
+        <img src="/assets/solution Background image/AI & Machine Learning1.jpg" alt="Header Image" class="header-image" />
+
+        <!-- Centered Content -->
+        <div class="header-content">
+          <h1>AI & Machine Learning
+        </h1>
+          <p>solutions > AI & Machine Learning
+        </p>
+        </div>
+    </div>
+     <!-- Image and Content Section -->
+     <div class="content-container">
+        <!-- Left Side: Split Image with overlay text -->
+        <div class="main-container">
+            <div class="split-image-container">
+                <div class="split left"></div>
+                <div class="split right"></div>
+                <div class="overlay-text">
+                    <h2>solutions > AI & Machine Learning</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Right Side: Text Content -->
+        <div class="text-container">
+          <h2>solutions > AI & Machine Learning</h2>
+        <p>Artificial intelligence (AI) and machine learning (ML) are transforming the way businesses
+            operate, enabling them to automate processes, predict trends, and enhance decision-making.
+            At OpenFuture Technology Solutions, we harness the power of AI and ML to help businesses
+            unlock new efficiencies, optimize operations, and drive innovation..</p>
+        </div>
+        </div>
+
+    <!-- Why Us Section -->
+    <section class="why-us">
+        <h2>Why Us?</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Innovative Solutions</h3>
+                <p> We leverage the latest advancements in AI and machine learning
+                  to create solutions that drive efficiency and innovation in your business.</p>
+            </div>
+            <div class="card">
+                <h3> Automated Processes</h3>
+                <p>: Our AI technologies help automate routine tasks, freeing up
+                  your team to focus on strategic initiatives that drive growth.
+
+                </p>
+            </div>
+            <div class="card">
+                <h3>Data-Driven Decision-Making</h3>
+
+                <p>: By utilizing machine learning algorithms, we enable you
+                  to make smarter, data-driven decisions based on predictive analytics.
+
+                  </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Offerings Section -->
+    <div class="sap-offerings-container">
+      <h2 class="sap-heading">WE OFFERINGS</h2>
+      <div class="sap-offerings-grid">
+          <div class="sap-card" *ngFor="let item of sapOfferings">
+              <div class="number-square">{{ item.number }}</div>
+              <h4>{{ item.title }}</h4>
+              <div class="info-icon"><span class="material-icons">></span></div>
+
+              <div class="hover-text">{{ item.description }}</div>
+          </div>
+      </div>
+  </div>
+

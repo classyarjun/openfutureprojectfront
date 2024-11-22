@@ -1,0 +1,95 @@
+<app-navbar></app-navbar>
+<!-- Main Header Container -->
+<div class="header-container">
+  <img src="/assets/SERVICES/Business Analyst.jpg" alt="Header Image" class="header-image" />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Business Analyst</h1>
+    <p>Service > Business Analyst</p>
+  </div>
+</div>
+
+
+<div class="content-container">
+<!-- Left Side: Split Image with overlay text -->
+<div class="main-container">
+    <div class="split-image-container">
+        <div class="split left"></div>
+        <div class="split right"></div>
+        <div class="overlay-text">
+            <h2>Business Analyst</h2>
+        </div>
+    </div>
+</div>
+
+<!-- Right Side: Text Content -->
+<div class="text-container">
+  <h2>Bridging Business Needs with Technological Solutions</h2>
+  <p>
+    At OpenFuture Technologies Private Limited, we understand the importance of
+    aligning business processes with technology. Our Business Analyst services focus
+    on enhancing your business performance by identifying gaps, proposing strategic
+    solutions, and driving seamless implementation to ensure you meet your objectives
+  </p>
+  <h4>Why Partner with OpenFuture Technologies for Business Analysis?</h4>
+  <h5>Expertise Across Industries</h5>
+  <p>We bring experience from diverse sectors, providing customized solutions that address industry-specific challenges.</p>
+
+  <h5>Strategic Decision-Making</h5>
+  <p>Our analysts help you make informed decisions based on thorough analysis, ensuring that you remain competitive in your industry.</p>
+
+  <h5>Process Optimization</h5>
+  <p>We identify bottlenecks and inefficiencies, offering clear, actionable solutions to streamline operations.</p>
+
+  <h5>Innovative Solutions</h5>
+  <p>By leveraging the latest technological advancements, we ensure that your business stays ahead of the curve with innovative and scalable solutions.</p>
+
+
+</div>
+</div>
+
+<div class="container my-5">
+  <h2 class="text-center text-primary mt-5">Our Approach  </h2>
+  <div class="row mt-4">
+    <!-- First row: 3 cards -->
+    <ng-container *ngFor="let card of googlecloudExpertise.slice(0, 3)">
+      <div class="col-md-4 mb-4">
+        <div class="expertise-card card h-100 p-3 shadow-sm">
+          <h5 class="text-primary">{{ card.title }}</h5>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="row mt-4 justify-content-center">
+    <!-- Second row: Centered 2 cards -->
+    <ng-container *ngFor="let card of googlecloudExpertise.slice(3)">
+      <div class="col-md-4 mb-4">
+        <div class="expertise-card card h-100 p-3 shadow-sm">
+          <h5 class="text-primary">{{ card.title }}</h5>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">Our Business Analyst Services Cover</h2>
+  <div class="sap-offerings-grid">
+      <div class="sap-card" *ngFor="let item of googlecloudOfferings">
+          <div class="number-square">{{ item.number }}</div>
+          <h4>{{ item.title }}</h4>
+          <div class="info-icon"><span class="material-icons">chevron_right</span></div>
+
+          <div class="hover-text">{{ item.description }}</div>
+      </div>
+  </div>
+</div>

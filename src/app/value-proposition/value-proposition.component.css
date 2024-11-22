@@ -1,0 +1,167 @@
+
+/* Header style start */
+
+.breadcrumb-area {
+  padding: 150px 0;
+  /* Space above and below */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+}
+
+.breadcrumb-area h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.breadcrumb-area nav {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.breadcrumb-area nav .breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-area nav .breadcrumb li {
+  display: inline;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumb-area nav .breadcrumb li.active {
+  color: #fff;
+}
+
+.breadcrumb-area nav .breadcrumb li::after {
+  content: ">";
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 8px;
+}
+
+.breadcrumb-area nav .breadcrumb li:last-child::after {
+  content: "";
+}
+
+@media (max-width: 768px) {
+  .breadcrumb-area {
+    padding: 60px 0;
+  }
+
+  .breadcrumb-area h1 {
+    font-size: 2rem;
+  }
+
+  .breadcrumb-area nav {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb-area {
+    padding: 130px 0;
+  }
+
+  .breadcrumb-area h1 {
+    font-size: 2.5rem;
+  }
+
+  .breadcrumb-area nav {
+    font-size: 1rem;
+  }
+}
+
+/*? End header css */
+
+
+.container {
+  max-width: 1200px;
+}
+.custom-card {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.custom-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 5px solid rgb(60, 0, 255)
+}
+
+.card-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000000;
+  /* margin-bottom: 10px; */
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Background shape container */
+ .shape-left-top {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.shape-left-top {
+  top: 0;
+  left: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.shape-right-down {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  z-index: -1;
+}

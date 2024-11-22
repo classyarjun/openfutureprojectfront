@@ -1,0 +1,169 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Container */
+.header-container {
+  position: relative;
+  text-align: center;
+  height: 600px;
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.header-container:hover .header-image {
+  transform: scale(1.1);
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.header-content p {
+  font-size: 2rem;
+  animation: slideUp 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Subpoints container styling */
+.subpoints-container {
+  background-color: rgba(0, 0, 50, 0.7);
+  color: white;
+  padding: 50px;
+  padding-top: 50px;
+  display: flex;
+  margin: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds subtle shadow */
+}
+
+.subpoint {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 250px; /* Adjust this width as needed */
+}
+
+.subpoint i {
+  font-size: 24px;
+}
+
+/* Optional styling for text alignment within subpoints */
+.subpoint strong {
+  font-size: 16px;
+}
+
+.subpoint p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+.contact-form-container {
+background-image: url('src/assets/Contact/Contact.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Form Styling */
+.contact-form {
+  margin-left: 2rem;
+  background-color: rgb(255, 255, 255); /* Add semi-transparent background */
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+}
+
+/* Styling for Two Inputs Side by Side */
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group {
+  flex: 1; /* Distribute space evenly */
+}
+
+/* General Styling */
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}

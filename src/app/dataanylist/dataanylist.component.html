@@ -1,0 +1,72 @@
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+  <img src="../../assets/header images/Services Images for BG/Data Analyst.jpg" alt="Header Image" class="header-image" />
+  
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Data Analyst</h1>
+    <p>Industries > Data Analyst</p>
+  </div>
+</div>
+
+
+  
+
+
+<div class="content-container">
+<!-- Left Side: Split Image with overlay text -->
+<div class="main-container">
+    <div class="split-image-container">
+        <div class="split left"></div>
+        <div class="split right"></div>
+        <div class="overlay-text">
+            <h2>Data Analyst</h2>
+        </div>
+    </div>
+</div>
+
+<!-- Right Side: Text Content -->
+<div class="text-container">
+  <h2>Empower Your Business with Data-Driven Insights</h2>
+  
+  <p>
+    At OpenFuture Technologies Private Limited, our Data Analyst services enable
+    businesses to make informed decisions based on accurate and actionable insights.
+    By analyzing trends, patterns, and key metrics, we transform raw data into
+    meaningful reports and visualizations that drive business success.
+  </p>
+  
+ 
+</div>
+</div>
+<div class="container my-5">
+  <h2 class="text-center text-primary mt-5">Our Expertise in Data Analysis</h2>
+  <div class="row mt-4">
+    <!-- First row: 3 cards -->
+    <ng-container *ngFor="let card of dataanylistExpertise.slice(0, 3)">
+      <div class="col-md-4 mb-4">
+        <div class="expertise-card card h-100 p-3 shadow-sm">
+          <h5 class="text-primary">{{ card.title }}</h5>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  
+  <div class="row mt-4 justify-content-center">
+    <!-- Second row: Centered 2 cards -->
+    <ng-container *ngFor="let card of dataanylistExpertise.slice(3)">
+      <div class="col-md-4 mb-4">
+        <div class="expertise-card card h-100 p-3 shadow-sm">
+          <h5 class="text-primary">{{ card.title }}</h5>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+  
+  
+

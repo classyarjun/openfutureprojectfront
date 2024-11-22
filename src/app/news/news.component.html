@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+  <img src="/assets/Industries Background/News.jpg" alt="Header Image" class="header-image" />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>News</h1>
+    <p>Industries > News</p>
+  </div>
+</div>
+
+<div class="main-container">
+  <!-- Left side: Split Image with overlay text -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>News</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side: Text content -->
+  <div class="right-side">
+    <h1>Delivering Timely News with Innovative Solutions</h1>
+    <p>
+      At OpenFuture Technologies Private Limited, we are committed to transforming the
+      news industry through advanced technology and tailored solutions. Our goal is to
+      empower media organizations to deliver accurate, engaging, and timely news to their
+      audiences, ensuring they stay informed in a fast-paced world.
+    </p>
+  </div>
+</div>
+
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">News Solutions</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of news">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

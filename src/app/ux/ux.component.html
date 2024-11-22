@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+ 
+<!-- Main Header Container -->
+<div class="header-container">
+  <img
+    src="../../assets/header images/Services Images for BG/Responsive UIUX.jpg"
+    alt="Header Image"
+    class="header-image"
+  />
+ 
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Responsive UI/UX</h1>
+    <p>Services > Responsive UI/UX</p>
+  </div>
+</div>
+ 
+<div class="main-container">
+  <!-- Left side: Split Image with overlay text -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Responsive UI/UX</h2>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Right side: Text content -->
+  <div class="right-side">
+    <h1>Responsive UI/UX</h1>
+   <br> <br>
+    <p>
+        At OpenFuture Technologies Private Limited, we are dedicated to crafting responsive
+UI/UX designs that enhance user engagement and ensure seamless experiences
+across all devices. Our focus is on creating digital platforms that are not only intuitive
+and visually stunning but also optimized for performance, regardless of screen size
+or device type.
+    </p>
+    <p>
+        At OpenFuture Technologies, we provide UI/UX solutions that merge creativity,
+        functionality, and responsiveness, helping your business shine and offering users an
+        exceptional experience on any platform.
+        
+    </p>
+  </div>
+</div>
+ 
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">Responsive UI/UX Offerings</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of ux">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

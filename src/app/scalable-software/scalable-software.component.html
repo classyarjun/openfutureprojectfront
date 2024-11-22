@@ -1,0 +1,77 @@
+<!-- Main Header Container -->
+<div class="header-container">
+  <img src="/assets/solution Background image/Scalable  Software Architecture1.jpg" alt="Header Image"
+    class="header-image" />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Scalable Software Architecture</h1>
+    <p>solutions > Scalable Software Architecture</p>
+  </div>
+</div>
+<!-- Image and Content Section -->
+<div class="content-container">
+  <!-- Left Side: Split Image with overlay text -->
+  <div class="main-container">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Scalable Software Architecture</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Side: Text Content -->
+  <div class="text-container">
+    <h2>Scalable Software Architecture</h2>
+
+
+    <p>At OpenFuture Technology Solutions, we design scalable software architectures that grow with
+      your business. Our software solutions are built to handle increasing traffic, data, and complexity,
+      ensuring that your platform can scale effortlessly as your business expands. Whether you're
+      developing a new system from scratch or enhancing an existing platform, we design flexible,
+      high-performance architectures that adapt to evolving demands.</p>
+  </div>
+</div>
+
+
+<!-- Why Us Section -->
+<section class="why-us">
+  <h2>Why Us?</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Future-Proof Solutions</h3>
+      <p>At OpenFuture Technology Solutions, we design software
+        architectures that are not only robust but also scalable, ensuring your systems can
+        evolve with your business needs and market demands.
+      </p>
+    </div>
+    <div class="card">
+      <h3>High Performance</h3>
+      <p> Our architectures are optimized for performance, ensuring that your
+        applications can handle increased loads without compromising on speed or efficiency.
+      </p>
+    </div>
+    <div class="card">
+      <h3> Modular Design</h3>
+      <p>We employ a modular approach, allowing for easy integration of new
+        features and technologies, which helps you stay agile in a rapidly changing environment.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Our Offerings Section -->
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">WE OFFERINGS</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of sapOfferings">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="info-icon"><span class="material-icons">></span></div>
+
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

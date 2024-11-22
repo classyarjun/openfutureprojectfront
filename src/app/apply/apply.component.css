@@ -1,0 +1,45 @@
+.containe {
+  background-image: url('https://images.unsplash.com/photo-1598257006675-0aaec40301f9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.image-container{
+
+  padding: 5rem;
+
+}
+
+.form-container {
+
+  width: fit-content;
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+.form-container h3{
+color: rgb(21, 21, 110);
+text-align: center;
+}
+.btn {
+  width: 100%;
+}
+.text-danger {
+  color: red;
+  font-size: 0.9rem;
+}
+.modal.show {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal .modal-dialog {
+  margin: 10% auto;
+}
+
+ 

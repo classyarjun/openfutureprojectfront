@@ -1,0 +1,117 @@
+<app-navbar></app-navbar>
+<!-- Main Header Container -->
+<div class="header-container">
+  <img src="../../assets/header images/Services Images for BG/Google Cloud.jpg" alt="Header Image" class="header-image" />
+ 
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>google-cloud</h1>
+    <p>Industries > Computing Software</p>
+  </div>
+</div>
+ 
+ 
+ 
+ 
+<div class="content-container">
+<!-- Left Side: Split Image with overlay text -->
+<div class="main-container">
+    <div class="split-image-container">
+        <div class="split left"></div>
+        <div class="split right"></div>
+        <div class="overlay-text">
+            <h2>Computing Software</h2>
+        </div>
+    </div>
+</div>
+ 
+<!-- Right Side: Text Content -->
+<div class="text-container">
+  <h2>Transforming Your Business with Cloud Solutions</h2>
+  <p>
+    At OpenFuture Technologies Private Limited, we leverage Google Cloud Platform
+(GCP) to enhance operations for various industries. Our GCP expertise empowers
+organizations to maximize cloud technology, boosting scalability, security, and
+performance.
+  </p>
+  <h4>Why Choose Google Cloud with OpenFuture Technologies</h4>
+  <h5>Flexible Infrastructure</h5>
+  <p>Google Cloud offers a robust infrastructure that scales with your business
+  needs, adapting to increased traffic and new services in real time.</p>
+  <h5>Cost-Effective Solutions</h5>
+  <p>Benefit from Google’s pay-as-you-go model, optimizing cloud spending while
+  ensuring high performance.</p>
+   <h5>Advanced Security</h5>
+ <p> With features like data encryption and identity management, Google Cloud
+  keeps your data secure and compliant throughout its lifecycle.</p>
+  <h5>Seamless Migration</h5>
+  <p> Our migration services handle planning, execution, and support, ensuring
+  minimal disruption during your transition to the cloud.</p>
+  <h5>Innovative Tools</h5>
+  <p>Utilize GCP’s tools for data analytics and machine learning to drive innovation
+  and deliver custom solutions tailored to your needs.
+  </p>
+</div>
+</div>
+ 
+ 
+ 
+<div class="container my-5">
+  <h2 class="text-center text-primary mt-5">Expertise in Google Cloud</h2>
+  <div class="row mt-4">
+    <!-- First row: 3 cards -->
+    <ng-container *ngFor="let card of googlecloudExpertise.slice(0, 3)">
+      <div class="col-md-4 mb-4">
+        <div class="expertise-card card h-100 p-3 shadow-sm">
+          <h5 class="text-primary">{{ card.title }}</h5>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+ 
+  <div class="row mt-4 justify-content-center">
+    <!-- Second row: Centered 2 cards -->
+    <ng-container *ngFor="let card of googlecloudExpertise.slice(3)">
+      <div class="col-md-4 mb-4">
+        <div class="expertise-card card h-100 p-3 shadow-sm">
+          <h5 class="text-primary">{{ card.title }}</h5>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">Key Google Cloud Services We Provide</h2>
+  <div class="sap-offerings-grid">
+      <div class="sap-card" *ngFor="let item of googlecloudOfferings">
+          <div class="number-square">{{ item.number }}</div>
+          <h4>{{ item.title }}</h4>
+          <div class="info-icon"><span class="material-icons">chevron_right</span></div>
+ 
+          <div class="hover-text">{{ item.description }}</div>
+      </div>
+  </div>
+</div>
+ 

@@ -1,0 +1,520 @@
+
+
+
+.btn.btn-dark {
+  color: #ffffff;
+  background: #091d3e;
+  border: none;
+}
+.btn-sm {
+  padding: 8px 18px;
+}
+
+.jobs-form-area {
+  border-radius: 3rem;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.shadow-md {
+  box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.bg-white {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.px-4 {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group>.form-control,
+.input-group>.form-select {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+}
+
+.register-form .form-control,
+.register-form .form-select,
+form .form-control,
+form .form-select {
+  border-color: #9AB1C1;
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input {
+  border: 1px solid #e7e7e7;
+  border-radius: inherit;
+  box-shadow: inherit;
+  min-height: 50px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+
+
+.register-form .form-control,
+.register-form .form-select,
+form .form-control,
+form .form-select {
+  border-color: #9AB1C1;
+}
+
+.form-select,
+input::file-selector-button {
+  min-height: 50px;
+  line-height: 2.2rem;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.form-select {
+  display: block;
+  width: 100%;
+  padding: .375rem 2.25rem .375rem .75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select {
+  word-wrap: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+
+.bg-blue-gradient {
+  background: rgb(2, 33, 143);
+  background: linear-gradient(180deg, rgba(9, 55, 114, 1) 0%, rgba(15, 81, 167, 1) 100%) !important;
+}
+
+/* ! start second block mobile image css  */
+
+img, svg {
+  vertical-align: middle;
+}
+.mobile-screen-1 {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  max-width: 550px;
+}
+
+img {
+  border: none;
+  outline: none;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) { /* Adjust width as needed */
+  .mobile-screen-1 img {
+    width: 100%; /* Reduce width on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+.mobile-screen {
+  max-width: 400px;
+  margin: auto;
+  display: block;
+}
+
+/* ! end second block mobile image css  */
+
+
+@media (min-width: 768px) {
+  .d-md-block {
+      display: block !important;
+  }
+}
+.border-right {
+  border-right: 1px solid #e7e7e7;
+}
+@media (min-width: 768px) {
+  .d-md-block {
+      display: block !important;
+  }
+}
+.d-none {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .col-md-auto {
+      flex: 0 0 auto;
+      width: auto;
+  }
+}
+
+option {
+  font-weight: normal;
+  display: block;
+  padding-block-start: 0px;
+  padding-block-end: 1px;
+  min-block-size: 1.2em;
+  padding-inline: 2px;
+  white-space: nowrap;
+}
+
+/* input icon style */
+.bi-search::before {
+  content: "\f52a";
+}
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.fs-1 {
+  font-size: 1.8rem !important;
+}
+.text-theme {
+  color: rgba(2, 33, 143, 1);
+}
+
+/* input icon stle end  */
+
+
+.shape-left-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 500px;
+  width: 500px;
+  background-size: contain;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+
+.shape-right-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 300px;
+  width: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  z-index: -1;
+}
+
+
+
+/* ----------------------------------
+    Choose Us Style
+ ------------------------------------*/
+ .choose-us-area {
+  position: relative;
+  z-index: 1;
+}
+.choose-us-area .shape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .choose-us-area .shape {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .choose-us-area .shape {
+    display: none;
+  }
+}
+
+.choose-us-style-two-box {
+  position: relative;
+  z-index: 1;
+}
+.choose-us-style-two-box .shape-bottom {
+  position: absolute;
+  left: -150px;
+  width: 300px;
+  top: -180px;
+  z-index: -1;
+}
+
+.choose-us-style-one .right-item {
+  position: relative;
+  z-index: 1;
+}
+
+.choose-us-card .item {
+  border: 1px solid #e7e7e7;
+  padding: 50px;
+  border-radius: 30px;
+  transition: all 0.35s ease-in-out;
+  background: #ffffff;
+}
+.choose-us-card .item img {
+  height: 100px;
+  margin-bottom: 20px;
+}
+.choose-us-card .item span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+.choose-us-card .item a {
+  text-transform: uppercase;
+}
+.choose-us-card .item h4 {
+  font-weight: 600;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .choose-us-card .item {
+    margin-top: 50px;
+  }
+}
+.choose-us-card:first-child .item {
+  background: #f9f9f9;
+  margin-top: 50px;
+}
+
+.choose-us-style-two {
+  margin-bottom: 60px;
+}
+.choose-us-style-two .thumb {
+  position: relative;
+}
+.choose-us-style-two .thumb img {
+  border-radius: 5px;
+}
+.choose-us-style-two .thumb .title {
+  margin-left: 30px;
+  position: absolute;
+  border-bottom: 1px solid #e7e7e7;
+  background: #ffffff;
+  bottom: -30px;
+  padding: 15px 30px;
+  border-radius: 8px 0 8px 8px;
+  transition: all 0.45s ease-in-out;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.choose-us-style-two .thumb .title h4 {
+  font-weight: 600;
+  margin: 0;
+}
+.choose-us-style-two .thumb .title h5 {
+  font-weight: 600;
+  margin: 0;
+}
+.choose-us-style-two .thumb .title a {
+  color: #232323;
+}
+.choose-us-style-two .thumb .title a i {
+  position: relative;
+  top: 2px;
+  margin-left: 20px;
+}
+.choose-us-style-two .thumb .title .top {
+  display: flex;
+  align-items: center;
+}
+.choose-us-style-two .thumb .title .top i {
+  display: inline-block;
+  color: #104cba;
+  text-align: center;
+  font-size: 45px;
+  margin-right: 20px;
+  background: linear-gradient(to right, #02218f, #0e72e3, #02218f);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 220% 150%;
+}
+.choose-us-style-two .thumb .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 37px;
+  z-index: 1;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.35s ease-in-out;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+.choose-us-style-two .thumb .overlay i {
+  display: inline-block;
+  font-size: 35px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  height: 70px;
+  width: 70px;
+  line-height: 80px;
+  background: linear-gradient(to right, #104cba, #00ccff, #104cba);
+  border-radius: 50%;
+  background-size: 220% 150%;
+}
+.choose-us-style-two .thumb .overlay a {
+  color: #ffffff;
+}
+.choose-us-style-two .thumb .overlay p {
+  margin: 0;
+  color: #fbf6f6;
+}
+.choose-us-style-two .thumb .overlay::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #091d3e;
+  z-index: -1;
+  opacity: 0.6;
+  border-radius: 5px;
+  transition: all 0.35s ease-in-out;
+}
+.choose-us-style-two:hover .thumb .overlay {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
+.choose-us-card-two:hover .title {
+  transition: all 0.35s ease-in-out;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .choose-us-card {
+    margin-top: 30px;
+  }
+  .choose-us-card:first-child {
+    margin-top: 0;
+  }
+}
+
+
+
+/* ! ========================  find code =========================================*/
+
+.job-bg {
+  background-image: url(https://careers.nityo.com/img/nityo-jobs-app/job-bg.png);
+  background-size: 100% 100%;
+  border-radius: 25px;
+  overflow: hidden;
+}

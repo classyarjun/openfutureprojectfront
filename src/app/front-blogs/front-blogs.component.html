@@ -1,0 +1,33 @@
+<div class="header-container">
+  <img src="/assets/Industries Background/News.jpg" alt="Header Image" class="header-image" />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>News & Blogs</h1>
+    <p>Industries > News & Blogs</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row ">
+    <div class="col-12 col-md-4 px-2" *ngFor="let news of newsList; let i = index">
+      <div class="card">
+        <div class="featured-imag">
+          <img src="https://blog.nityo.com/wp-content/uploads/2023/09/creatio-banner-1.jpg"
+            alt="nityo-infotech-collaborates-with-creatio-to-transform-workflow-automation-and-crm-with-no-code" />
+        </div>
+        <div class="entry-content">
+          <div class="heading">
+            <h3>{{ news.newsTitle }}</h3>
+            <span>{{ news.publishedDate }}</span>
+          </div>
+          <p>
+            {{ news.newsContent }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,76 @@
+
+    <!-- Header Section -->
+    <div class="header-container">
+        <img src="/assets/solution Background image/Full Stack Development1.png" alt="Header Image" class="header-image" />
+
+        <!-- Centered Content -->
+        <div class="header-content">
+          <h1>Full-Stack Development</h1>
+          <p>solutions > Full-Stack Development</p>
+        </div>
+      </div>
+         <!-- Image and Content Section -->
+         <div class="content-container">
+            <!-- Left Side: Split Image with overlay text -->
+            <div class="main-container">
+                <div class="split-image-container">
+                    <div class="split left"></div>
+                    <div class="split right"></div>
+                    <div class="overlay-text">
+                        <h2>Full-Stack Development</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Text Content -->
+            <div class="text-container">
+              <h2>Full-Stack Development</h2>
+
+
+            <p>At OpenFuture Technology Solutions, we offer comprehensive full-stack development services
+                that cover both front-end and back-end systems. Our full-stack development approach ensures
+                that all layers of your web or mobile application work seamlessly together to deliver a unified
+                and efficient user experience. From designing interactive user interfaces to building robust
+                server-side logic, we provide end-to-end solutions that bring your ideas to life.</p>
+
+
+            </div>
+            </div>
+    <!-- Why Us Section -->
+    <section class="why-us">
+        <h2>Why Us?</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Expertise Across the Stack</h3>
+                <p> Our full-stack development services encompass both
+                  front-end and back-end development, ensuring seamless functionality and user
+                  experience.</p>
+            </div>
+            <div class="card">
+                <h3>Efficient Development Process</h3>
+                <p>: We leverage agile methodologies to streamline the
+                  development process, delivering high-quality products on time and within budget.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Custom Solutions</h3>
+
+                <p> We provide tailored web and mobile solutions that meet your
+                  specific business needs, ensuring high performance and reliability.
+                  </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Offerings Section -->
+    <div class="sap-offerings-container">
+      <h2 class="sap-heading">WE OFFERINGS</h2>
+      <div class="sap-offerings-grid">
+          <div class="sap-card" *ngFor="let item of sapOfferings">
+              <div class="number-square">{{ item.number }}</div>
+              <h4>{{ item.title }}</h4>
+              <div class="info-icon"><span class="material-icons">></span></div>
+              <div class="hover-text">{{ item.description }}</div>
+          </div>
+   </div>
+  </div>

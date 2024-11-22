@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+  <img src="/assets/Industries Background/Fintech.jpg" alt="Header Image" class="header-image" />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Fintech</h1>
+    <p>Industries > Fintech</p>
+  </div>
+</div>
+
+<div class="main-container">
+  <!-- Left side: Split Image with overlay text -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Fintech</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side: Text content -->
+  <div class="right-side">
+    <h1>Empowering Financial Services Through Innovative Fintech Solutions</h1>
+    <p>
+      At OpenFuture Technologies Private Limited, we are committed to transforming the
+      financial landscape with cutting-edge fintech solutions. Our goal is to empower
+      businesses and consumers to access seamless financial services, enhance
+      operational efficiency, and ensure robust security in every transaction.
+    </p>
+  </div>
+</div>
+
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">Fintech Solutions</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of fintech">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>
+

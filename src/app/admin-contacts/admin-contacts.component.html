@@ -1,0 +1,176 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-4 col-md-4 col-lg-2 sidebar sticky-top">
+      <div class="text-center my-3">
+        <img
+          src="/assets/admin.png"
+          class="rounded-circle img-fluid p-2" alt="User" style="width: 80px; height: 80px" />
+        <h5 class="text-white">Admin</h5>
+      </div>
+      <hr />
+      <ul class="nav flex-column mx-5 ">
+        <li class="nav-item mb-2">
+          <a class="nav-link" [routerLink]="['/admin']" routerLinkActive="router-link-active">
+            <i class="fa fa-briefcase text-warning"></i> Job's
+          </a>
+        </li>
+
+        <li class="nav-item mb-2">
+          <a class="nav-link" [routerLink]="['/admin-all-forms']">
+            <i class="fa-brands fa-wpforms"></i> Forms
+          </a>
+        </li>
+
+        <li class="nav-item mb-2">
+          <a class="nav-link  bg-white text-black" [routerLink]="['/admin-contacts']">
+            <i class="fas fa-envelope text-info"></i> Contact
+          </a>
+        </li>
+
+        <li class="nav-item mb-2">
+          <a class="nav-link" [routerLink]="['/admin-news']">
+            <i class="fas fa-table text-success"></i> News
+          </a>
+        </li>
+
+        <!-- <li class="nav-item mb-2">
+          <a class="nav-link" [routerLink]="['/admin-blogs']">
+            <i class="fas fa-folder-open text-danger"></i> Blogs
+          </a>
+        </li> -->
+
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <div class="col-8 col-md-8 col-lg-10 p-0">
+      <!-- topbar start -->
+      <div class="d-flex justify-content-between align-items-center topbar">
+        <div class="d-flex gap-2 align-items-center">
+          <i class="fa-solid fa-bars fa-xl"></i>
+          <img src="https://openfuturetechnologies.com/images/logoimg.png" width="150" alt="" />
+        </div>
+        <div>
+          <!-- <i class="fas fa-bell me-3"></i> -->
+          <span class="dropdown-toggle p-2" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img
+              src="/assets/admin.png"
+              class="rounded-circle img-fluid" alt="User" style="width: 40px; height: 40px" />
+            Admin
+          </span>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <!-- <li><a class="dropdown-item" href="#">My Profile</a></li> -->
+            <li><a class="dropdown-item" href="#">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Dashboard in content -->
+
+      <div class="content p-3">
+        <div class="mt-4">
+          <!-- Top Cards -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card p-3">
+                <h5 class="text-black text-center "> All Contact Forms </h5>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- View Contact Modal -->
+          <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="deleteModalLabel">View Contact</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body" *ngIf="selectedContact">
+                  <p><strong>Name:</strong> {{ selectedContact.firstName }} {{ selectedContact.lastName }}</p>
+                  <p><strong>Country:</strong> {{ selectedContact.country }}</p>
+                  <p><strong>Designation:</strong> {{ selectedContact.designation }} </p>
+                  <p><strong>Company:</strong> {{ selectedContact.company }}</p>
+                  <p><strong>Email:</strong> {{ selectedContact.email }}</p>
+                  <p><strong>Phone:</strong> {{ selectedContact.phone }}</p>
+                  <p><strong>Industry:</strong> {{ selectedContact.industry }}</p>
+                  <p><strong>Message:</strong> {{ selectedContact.message }}</p>
+                  <p><strong>Date Submitted:</strong> {{ selectedContact.dateCreated | date }}</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Job Table -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <h5 class="btn">Contact Submitted Forms</h5>
+            </div>
+
+            <!-- Table -->
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered table-hover">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Sr No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Industry</th>
+                    <th scope="col">Message</th>
+                    <th scope="col">Date Submitted</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr *ngFor="let contact of contacts; let i = index">
+                    <!-- <td>{{ contact.id }}</td> -->
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ contact.firstName }} {{ contact.lastName }}</td>
+                    <td>{{ contact.email }}</td>
+                    <td>{{ contact.phone }}</td>
+                    <td>{{ contact.designation }}</td>
+                    <td>{{ contact.industry }}</td>
+                    <td>{{ contact.message }}</td>
+                    <td>{{ contact.dateCreated | date }}</td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                          (click)="viewContact(contact)">
+                          View
+                        </button>
+                        <button class="btn btn-danger btn-sm" (click)="deleteContact(contact.id!)">
+                          Delete
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap and Font Awesome Scripts -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

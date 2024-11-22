@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+  <img
+    src="../../assets/Industries/HEALTH CARE.jpg"
+    alt="Header Image"
+    class="header-image"
+  />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Healthcare</h1>
+    <p>Industries > Healthcare</p>
+  </div>
+</div>
+
+<div class="main-container">
+  <!-- Left side: Collage with text overlay -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Healthcare</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side: Text content -->
+  <div class="right-side">
+    <h1>Transforming Healthcare Through Innovative Solutions</h1>
+    <p>
+      At OpenFuture Technologies Private Limited, we are dedicated to
+      revolutionizing the healthcare industry with cutting-edge technology and
+      innovative solutions.
+    </p>
+    <p>
+      Our mission is to enhance patient care, streamline operations, and improve
+      health outcomes by leveraging the latest advancements in healthcare
+      technology.
+    </p>
+  </div>
+</div>
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">Healthcare Offerings</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of healthcare">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <!-- <div class="info-icon">
+        <span class="material-icons"></span>
+      </div> -->
+
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

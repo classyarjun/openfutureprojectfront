@@ -1,0 +1,365 @@
+<!-- Bootstrap CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-4 col-md-4 col-lg-2 sidebar sticky-top">
+      <div class="text-center my-3">
+        <img
+          src="/assets/admin.png" class="rounded-circle img-fluid p-2" alt="User" style="width: 80px; height: 80px" />
+          <h5 class="text-white">{{adminData.name}}</h5>
+      </div>
+      <hr />
+      <ul class="nav flex-column mx-5 ">
+        <li class="nav-item mb-2">
+          <a class="nav-link bg-white text-black" [routerLink]="['/admin']" routerLinkActive="router-link-active">
+            <i class="fa fa-briefcase text-warning"></i> Job's
+          </a>
+        </li>
+
+        <li class="nav-item mb-2">
+          <a class="nav-link" [routerLink]="['/admin-all-forms']">
+            <i class="fa-brands fa-wpforms"></i> Forms
+          </a>
+        </li>
+
+        <li class="nav-item mb-2">
+          <a class="nav-link" [routerLink]="['/admin-contacts']">
+            <i class="fas fa-envelope text-info"></i> Contact
+          </a>
+        </li>
+
+        <li class="nav-item mb-2">
+          <a class="nav-link" [routerLink]="['/admin-news']">
+            <i class="fas fa-table text-success"></i> News
+          </a>
+        </li>
+
+        <!-- <li class="nav-item mb-2">
+          <a class="nav-link" [routerLink]="['/admin-blogs']">
+            <i class="fas fa-folder-open text-danger"></i> Blogs
+          </a>
+        </li> -->
+
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <div class="col-8 col-md-8 col-lg-10 p-0">
+      <!-- topbar start -->
+      <div class="d-flex justify-content-between align-items-center topbar">
+        <div class="d-flex gap-2 align-items-center">
+          <i class="fa-solid fa-bars fa-xl"></i>
+          <img src="https://openfuturetechnologies.com/images/logoimg.png" width="150" alt="" />
+        </div>
+        <div>
+          <!-- <i class="fas fa-bell me-3"></i> -->
+          <span class="dropdown-toggle p-2" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-expanded="false">
+
+
+            <img src="/assets/admin.png" class="rounded-circle img-fluid" alt="User" style="width: 40px; height: 40px" />
+              {{adminData.name}}
+          </span>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <!-- <li><a class="dropdown-item" href="#">My Profile</a></li> -->
+            <li><a class="dropdown-item" href="#">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Dashboard in content -->
+
+      <div class="content p-3">
+        <div class="mt-4">
+          <!-- Top Cards -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card p-3">
+                <h5 class=" text-black text-center "> All Jobs </h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- =====================  Create Modal ======================= -->
+
+
+          <div class="modal fade" id="CreateModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true"
+            #createModal>
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="createModalLabel">Create Job</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form (ngSubmit)="addJob()">
+
+                    <div class="mb-2">
+                      <label for="jobTitle" class="form-label">Title</label>
+                      <input type="text" class="form-control" id="jobTitle" required [(ngModel)]="newJob.title"
+                        name="title" />
+                    </div>
+
+
+
+                    <div class="mb-2">
+                      <label for="jobTitle" class="form-label">Location</label>
+                      <input type="text" class="form-control" id="location" required [(ngModel)]="newJob.location"
+                        name="title" />
+                    </div>
+
+
+                    <!-- <div class="mb-2">
+                      <label for="category" class="form-label">Category</label>
+                      <select class="form-select" id="category" required [(ngModel)]="newJob.category" name="category">
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="Banking">Banking</option>
+                        <option value="Healthcare">Healthcare</option>
+                      </select>
+                    </div> -->
+
+                    <div class="mb-2">
+                      <label for="jobTitle" class="form-label">Category</label>
+                      <input type="text" class="form-control" id="category" required [(ngModel)]="newJob.category" name="category"
+                        />
+                    </div>
+
+
+
+
+
+                    <div class="mb-2">
+                      <label for="salary" class="form-label">Salary</label>
+                      <select class="form-select" id="salary" required [(ngModel)]="newJob.salary" name="salary">
+                        <option value="" disabled selected>Select Salary</option>
+                        <option value="0-2">0-2 Lpa</option>
+                        <option value="3-5">3-5 Lpa</option>
+                        <option value="6-7">6-7 Lpa</option>
+                        <option value="8-9">8-9 Lpa</option>
+                        <option value="10-12">10-12 Lpa</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="employmentTypeSelect" class="form-label">Select Employment Type</label>
+                      <select class="form-select" id="employmentTypeSelect" required [(ngModel)]="newJob.employmentType"
+                        name="employmentType">
+                        <option value="" disabled selected>Select Employment Type</option>
+                        <option value="full-time">Full-Time</option>
+                        <option value="part-time">Part-Time</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="internship">Internship</option>
+                        <option value="contract">Contract</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="workModelSelect" class="form-label">Work Model</label>
+                      <select class="form-select" id="workModelSelect" required [(ngModel)]="newJob.workModel"
+                        name="workModel">
+                        <option value="" disabled selected>Select Work Model</option>
+                        <option value="Work From Office">Work From Office</option>
+                        <option value="remote">Remote</option>
+                        <option value="hybrid">Hybrid</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="experienceSelect" class="form-label">Select Experience</label>
+                      <select class="form-select" id="experienceSelect" required [(ngModel)]="newJob.experience"
+                        name="experience">
+                        <option value="" disabled selected>Select Experience Range</option>
+                        <option value="0-1">0 to 1 year</option>
+                        <option value="2-3">2 to 3 years</option>
+                        <option value="4-5">4 to 5 years</option>
+                        <option value="6-7">6 to 7 years</option>
+                        <option value="8-9">8 to 9 years</option>
+                        <option value="10-11">10 to 11 years</option>
+                        <option value="12">12+ years</option>
+                      </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- ==========================  Edit Modal ========================================= -->
+          <div class="modal fade" id="EditModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true"
+            #editModal>
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="editModalLabel">Edit Job</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form (ngSubmit)="updateJob(selectedJob)">
+
+                    <!-- Add other fields similarly -->
+                    <div class="mb-2">
+                      <label for="editJobId" class="form-label">Job ID</label>
+                      <input type="number" class="form-control" id="editJobId" [(ngModel)]="selectedJob.id"
+                        name="editJobId" required disabled />
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="editJobTitle" class="form-label">Title</label>
+                      <input type="text" class="form-control" id="editJobTitle" [(ngModel)]="selectedJob.title"
+                        name="editJobTitle" required />
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="editJobLocation" class="form-label">Location</label>
+                      <input type="text" class="form-control" id="editJobLocation" [(ngModel)]="selectedJob.location"
+                        name="editJobLocation" required />
+                    </div>
+
+
+                    <div class="mb-2">
+                      <label for="editJobCategory" class="form-label">Category</label>
+                      <input type="text" class="form-control" id="editJobCategory" [(ngModel)]="selectedJob.category"
+                        name="editJobCategory" required />
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="editEmploymentType" class="form-label">Employment Type</label>
+                      <input type="text" class="form-control" id="editEmploymentType"
+                        [(ngModel)]="selectedJob.employmentType" name="editEmploymentType" required />
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="editWorkModel" class="form-label">Work Model</label>
+                      <input type="text" class="form-control" id="editWorkModel" [(ngModel)]="selectedJob.workModel"
+                        name="editWorkModel" required />
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="editExperience" class="form-label">Experience</label>
+                      <input type="text" class="form-control" id="editExperience" [(ngModel)]="selectedJob.experience"
+                        name="editExperience" required />
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="editSalary" class="form-label">Salary</label>
+                      <input type="text" class="form-control" id="editSalary" [(ngModel)]="selectedJob.salary"
+                        name="editSalary" required />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true"
+            #deleteModal>
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Are you sure you want to delete this entry?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-danger" (click)="deleteJob()">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Job Table -->
+          <div class="card mt-4">
+            <div class="card-header">
+              <h5 class="btn">Available Jobs</h5>
+              <div class="float-end">
+                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#CreateModal">
+                  <i class="fa-solid fa-circle-plus fa-xl"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>Sr No</th>
+                    <th>Title</th>
+                    <th>Location</th>
+                    <th>Category</th>
+                    <th>Work Model</th>
+                    <th>Employment Type</th>
+                    <th>Experience</th>
+                    <th>Salary</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <!-- ! Repeat table job entries -->
+                  <tr *ngFor="let job of jobs">
+                    <td>{{ job.id }}</td>
+                    <td><strong>{{ job.title }}</strong></td>
+                    <td>{{ job.location }}</td>
+                    <td>{{ job.category }}</td>
+                    <td>{{ job.workModel }}</td>
+                    <td>{{ job.employmentType }}</td>
+                    <td>{{ job.experience }}</td>
+                    <td>{{ job.salary }}</td>
+                    <td>
+
+                      <div class="d-flex gap-2 align-items-center">
+
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#EditModal"
+                          (click)="openEditModal(job)">
+                          <i class="fa-solid fa-pen"></i>
+                        </button>
+
+                        <button class="btn btn-danger btn-sm" (click)="openDeleteModal(job)">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+
+                      </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div *ngIf="admin">
+  <h3>Admin Details</h3>
+  <p><strong>ID:</strong> {{ admin.id }}</p>
+  <p><strong>Name:</strong> {{ admin.name }}</p>
+  <p><strong>Email:</strong> {{ admin.email }}</p>
+</div>
+<div *ngIf="error" style="color: red;">
+  {{ error }}
+</div> -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

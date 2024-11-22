@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+ 
+<!-- Main Header Container -->
+<div class="header-container">
+  <img
+    src="../../assets/header images/Services Images for BG/E-commerce Development.jpg"
+    alt="Header Image"
+    class="header-image"
+  />
+ 
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>E-commerce Development</h1>
+    <p>Services > E-commerce Development</p>
+  </div>
+</div>
+ 
+<div class="main-container">
+  <!-- Left side: Text content -->
+  <div class="right-side">
+    <H1> E-commerceDevelopment </H1>
+    <p>
+    
+      At OpenFuture Technologies Private Limited, we specialize in creating robust and
+      scalable e-commerce solutions tailored to meet the unique needs of your business.
+      Our approach combines cutting-edge technology with a user-centric design, ensuring
+      a seamless shopping experience that drives conversions and fosters customer
+      loyalty.
+    </p>
+    <p>
+      At OpenFuture Technologies, we are committed to empowering your e-commerce
+      business with innovative solutions that not only enhance the shopping experience
+      but also drive growth and profitability in a competitive digital marketplace.
+    </p>
+  </div>
+ 
+  <!-- Right side: Split Image with overlay text -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>E-commerce Development</h2>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">E-commerce Development Offerings</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of ecommercedevelopment">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

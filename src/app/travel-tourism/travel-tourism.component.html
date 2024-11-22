@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+  <img src="../../assets/Industries/Travel And Tourism.jpg" alt="Header Image" class="header-image" />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Travel & Tourism</h1>
+    <p>Industries > Travel & Tourism</p>
+  </div>
+</div>
+
+<div class="main-container">
+  <!-- Left side: Split Image with overlay text -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Travel & Tourism</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side: Text content -->
+  <div class="right-side">
+    <h1>Elevating Travel & Tourism with Innovative Solutions</h1>
+    <p>
+      At OpenFuture Technologies Private Limited, we are dedicated to transforming
+      the travel and tourism industry through innovative technology solutions that
+      enhance customer experiences and streamline operations. Our mission is to empower
+      travel businesses to thrive in a competitive landscape while providing unforgettable
+      journeys for their customers.
+    </p>
+  </div>
+</div>
+
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">Our Travel & Tourism Solutions</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of travelTourism">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

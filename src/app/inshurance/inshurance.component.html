@@ -1,0 +1,50 @@
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+<img src="/assets/Industries Background/Insurance.jpg" alt="Header Image" class="header-image" />
+
+  <!-- Centered Content -->
+<div class="header-content">
+<h1>Insurance</h1>
+<p>Industries > Insurance</p>
+</div>
+</div>
+
+<div class="main-container">
+<!-- Left side: Split Image with overlay text -->
+<div class="left-side">
+<div class="split-image-container">
+<div class="split left"></div>
+<div class="split right"></div>
+<div class="overlay-text">
+<h2>Insurance</h2>
+</div>
+</div>
+</div>
+
+  <!-- Right side: Text content -->
+<div class="right-side">
+<h1>Transforming Insurance Solutions for a Digital Era</h1>
+<p>
+
+      At OpenFuture Technologies Private Limited, we are dedicated to revolutionizing the insurance industry through
+
+      innovative technology solutions. Our expertise enables insurance providers to enhance customer experience, streamline
+
+      operations, and improve risk management while adapting to the rapidly changing digital landscape.
+</p>
+</div>
+</div>
+
+<div class="sap-offerings-container">
+<h2 class="sap-heading">Insurance Solutions</h2>
+<div class="sap-offerings-grid">
+<div class="sap-card" *ngFor="let item of insurance">
+<div class="number-square">{{ item.number }}</div>
+<h4>{{ item.title }}</h4>
+<div class="hover-text">{{ item.description }}</div>
+</div>
+</div>
+</div>
+

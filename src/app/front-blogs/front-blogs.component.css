@@ -1,0 +1,114 @@
+
+/* Header Container */
+.header-container {
+  position: relative;
+  text-align: center;
+  height: 600px;
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.header-container:hover .header-image {
+  transform: scale(1.1);
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.header-content p {
+  font-size: 2rem;
+  animation: slideUp 1.5s ease-in-out;
+}
+
+
+
+/* !  card css  */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  position: relative;
+}
+.entry-content {
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  color: #f0f0f0;
+
+}
+.entry-content p{
+
+    font-weight: 500;
+}
+
+.featured-imag img {
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 75vh;
+}
+
+
+
+
+.card::before,
+.card::after {
+content: "";
+position: absolute;
+transition: all 0.3s ease;
+}
+
+.card::before {
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-top: 8px solid transparent;
+border-left: 8px solid transparent;
+border-radius: 8px;
+z-index: 1;
+}
+
+.card::after {
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100%;
+border-bottom: 8px solid transparent;
+border-right: 8px solid transparent;
+border-radius: 8px;
+z-index: 1;
+}
+
+/* Hover effect on border */
+.card:hover::before {
+border-top-color: #3498db;
+border-left-color: #3498db;
+width: 50%;
+height: 50%;
+}
+
+.card:hover::after {
+border-bottom-color: #3498db;
+border-right-color: #3498db;
+width: 50%;
+height: 50%;
+}
+

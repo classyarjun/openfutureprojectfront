@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+  <img
+    src="/assets/SERVICES/Java Full Stack Development.jpg"
+    alt="Header Image"
+    class="header-image"
+  />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Java Full Stack Development</h1>
+    <p>Services > Java Full Stack Development</p>
+  </div>
+</div>
+
+<div class="main-container">
+  <!-- Left side: Split Image with overlay text -->
+  <div class="image-container">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Java Full Stack Development</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side: Text content -->
+  <div class="content-container">
+    <p class="fs-4 text-black">
+      At OpenFuture Technologies Private Limited, we specialize in Java Full Stack
+      Development, delivering end-to-end solutions that drive innovation and enhance user
+      experiences. Our expert team combines robust backend technologies with dynamic
+      frontend frameworks to create scalable and responsive applications tailored to your
+      business needs.
+    </p>
+    <p class="fs-4 text-black">
+      At OpenFuture Technologies, we are committed to providing comprehensive Java
+      Full Stack Development services that empower businesses to thrive in a competitive
+      digital landscape, delivering applications that are robust, scalable, and user-centric.
+    </p>
+  </div>
+</div>
+
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">Java Full Stack Development Offerings</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of Javafullstack">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

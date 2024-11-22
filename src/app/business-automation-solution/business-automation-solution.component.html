@@ -1,0 +1,84 @@
+
+    <!-- Header Section -->
+    <div class="header-container">
+        <img src="/assets/solution Background image/Business Automation Solutions.jpg" alt="Header Image" class="header-image" />
+
+        <!-- Centered Content -->
+        <div class="header-content">
+          <h1>Business Automation Solutions
+        </h1>
+          <p> Business Automation Solutions
+        </p>
+        </div>
+    </div>
+     <!-- Image and Content Section -->
+     <div class="content-container">
+        <!-- Left Side: Split Image with overlay text -->
+        <div class="main-container">
+            <div class="split-image-container">
+                <div class="split left"></div>
+                <div class="split right"></div>
+                <div class="overlay-text">
+                    <h2>solutions >Business Automation Solutions</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Text Content -->
+        <div class="text-container">
+          <h2> Business Automation Solutions</h2>
+
+
+        <p>At OpenFuture Technology Solutions, we help businesses improve efficiency and productivity by
+            automating routine and time-consuming processes. Our business automation solutions
+            streamline workflows, reduce manual work, and enable more efficient resource management,
+            allowing your team to focus on more strategic tasks that drive growth.
+            .</p>
+
+
+        </div>
+        </div>
+
+    <!-- Why Us Section -->
+    <section class="why-us">
+        <h2>Why Us?</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Streamlined Operations</h3>
+                <p>: Our automation solutions are designed to optimize business
+                  processes, reducing manual effort and increasing operational efficiency.
+                  </p>
+            </div>
+            <div class="card">
+                <h3> Customized Workflows</h3>
+                <p>We tailor automation solutions to your specific business
+                  needs, ensuring seamless integration and alignment with your operations.
+
+
+                </p>
+            </div>
+            <div class="card">
+                <h3> Focus on Growth</h3>
+
+                <p> By automating routine tasks, we enable your team to focus on
+                  strategic growth initiatives and innovation..
+
+                  </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Offerings Section -->
+    <div class="sap-offerings-container">
+      <h2 class="sap-heading">WE OFFERINGS</h2>
+      <div class="sap-offerings-grid">
+          <div class="sap-card" *ngFor="let item of sapOfferings">
+              <div class="number-square">{{ item.number }}</div>
+              <h4>{{ item.title }}</h4>
+              <div class="info-icon"><span class="material-icons"> > </span></div>
+
+              <div class="hover-text">{{ item.description }}</div>
+          </div>
+   </div>
+  </div>
+

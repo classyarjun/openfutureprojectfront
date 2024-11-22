@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+  <img
+    src="/assets/Industries Background/Consumer Electronics.jpg"
+    alt="Header Image"
+    class="header-image"
+  />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Consumer Electronics</h1>
+    <p>Industries > Consumer Electronics</p>
+  </div>
+</div>
+
+<div class="main-container">
+  <!-- Left side: Collage with text overlay -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Consumer Electronics</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side: Text content -->
+  <div class="right-side">
+    <h1>Revolutionizing Everyday Life with Innovative Consumer Electronics</h1>
+    <p>
+      At OpenFuture Technologies Private Limited, we are dedicated to developing
+      cutting-edge consumer electronics that enhance everyday experiences and
+      transform how individuals interact with technology.
+    </p>
+    <p>
+      Our expertise in product design and engineering enables us to create
+      smart, user-friendly devices that cater to the evolving needs of
+      consumers.
+    </p>
+  </div>
+</div>
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">Consumer Electronics Offerings</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of consumerelectronics">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <!-- <div class="info-icon">
+        <span class="material-icons"></span>
+      </div> -->
+
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

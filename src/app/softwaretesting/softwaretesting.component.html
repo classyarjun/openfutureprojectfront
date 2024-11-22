@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+ 
+<!-- Main Header Container -->
+<div class="header-container">
+  <img
+    src="../../assets/header images/Services Images for BG/Software Testing.jpg"
+    alt="Header Image"
+    class="header-image"
+  />
+ 
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Software Testing</h1>
+    <p>Services >Software Testing</p>
+  </div>
+</div>
+ 
+<div class="main-container">
+  <!-- Left side: Split Image with overlay text -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Software Testing</h2>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Right side: Text content -->
+  <div class="right-side">
+    <h1>Software Testing</h1>
+    
+    <p>
+        Software Testing Services at OpenFuture Technologies Private Limited ensure the
+delivery of robust, reliable, and high-performance applications. We understand the
+importance of quality assurance and employ a comprehensive range of testing
+methodologies to detect and eliminate issues before they impact your users.
+
+        
+    </p>
+    <p>
+        At OpenFuture Technologies, we are committed to delivering top-notch software
+testing services that enhance the quality, security, and reliability of your applications,
+enabling your business to thrive in the digital world.
+    </p>
+  </div>
+</div>
+ 
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">Software Testing</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of Softwaretesting ">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>

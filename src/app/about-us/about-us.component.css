@@ -1,0 +1,376 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ! Start Header style   */
+
+.breadcrumb-area {
+  padding: 160px 0;
+  /* Space above and below */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+}
+
+.breadcrumb-area h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.breadcrumb-area nav {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.breadcrumb-area nav .breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-area nav .breadcrumb li {
+  display: inline;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumb-area nav .breadcrumb li.active {
+  color: #fff;
+}
+
+.breadcrumb-area nav .breadcrumb li::after {
+  content: ">";
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 8px;
+}
+
+.breadcrumb-area nav .breadcrumb li:last-child::after {
+  content: "";
+}
+
+@media (max-width: 768px) {
+  .breadcrumb-area {
+    padding: 60px 0;
+  }
+
+  .breadcrumb-area h1 {
+    font-size: 2rem;
+  }
+
+  .breadcrumb-area nav {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb-area {
+    padding: 130px 0;
+  }
+
+  .breadcrumb-area h1 {
+    font-size: 2.5rem;
+  }
+
+  .breadcrumb-area nav {
+    font-size: 0.9rem;
+  }
+}
+
+/* ! End Header style   */
+
+/* ! first intro style  */
+.shape-left-top {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 30%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.backdrop{
+  z-index: 0;
+  background-color: rgba(255, 255, 255, 0.671); /* Slight white overlay with opacity */
+  backdrop-filter: blur(5px) saturate(180%); /* Apply the blur and saturation */
+}
+/* ! End first intro style  */
+
+/* ! Start block style  */
+
+.about-block {
+  /* background-color: #ddf0ff;  */
+  padding: 10px;
+   background-image: url('src/assets/aboutUsAll/About-Us images/map-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.round-block {
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.round-block img.icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.round-block h4 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 300;
+  margin: 0;
+}
+
+.round-block h4 span {
+  font-weight: 700;
+}
+
+/* Responsive Styling for Tablet and Mobile View */
+@media (max-width: 992px) {
+
+  /* Tablet View */
+  .about-block .row>.col-md-6 {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Tablets and Smaller Devices */
+  .about-block .row>.col-md-6 {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .round-block {
+    padding: 20px;
+    flex-direction: row;
+    /* Flex in a row direction */
+    text-align: center;
+  }
+
+  .round-block img.icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px 0 0;
+    /* Margin only on the right */
+  }
+
+  .round-block h4 {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Mobile View */
+
+  .about-block .row>.col-md-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .round-block {
+    padding: 15px;
+    border-radius: 100px;
+    flex-direction: row;
+    /* Flex in a row direction */
+    text-align: left;
+    padding: 25px !important;
+  }
+
+  .round-block img.icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .round-block h4 {
+    font-size: 1 rem;
+    text-align: left;
+    margin-left: 10px;
+  }
+}
+
+.block1 {
+   background-image: url('src/assets/aboutUsAll/About-Us images/Located in Countries.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: index -1;
+}
+.block2 {
+  background-image: url('src/assets/aboutUsAll/About-Us images/Global Employee.jpg');
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: index -1;
+}
+
+.block3 {
+  background-image: url('src/assets/aboutUsAll/About-Us images/Client Served.jpg');
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: index -1;
+}
+
+.block4 {
+  background-image: url('src/assets/aboutUsAll/About-Us images/Awards.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: index -1;
+}
+/* ! Laptop Image and video css  */
+
+.col-lg-6 {
+  position: relative;
+  max-width: 100%;
+}
+
+.position-relative {
+  position: relative;
+
+}
+
+.video-area {
+  position: absolute;
+  top: 4%;
+  left: 9%;
+  width: 82%;
+  height: 100%;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* This will ensure the video covers the area */
+}
+
+img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+/* ! End block style  */
+
+
+/* ! Start intro openfuture style */
+
+.info-section {
+  padding-bottom: 20px;
+}
+
+.info-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #000000;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .info-section p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
+
+/* ! End style intro openfuture  */
+
+
+/*! satrt mission vission style */
+
+.mission-vision-section {
+   background-image:
+   url('src/assets/aboutUsAll/vision-mission-bg-mobile.jpg'),
+    linear-gradient(rgba(60, 66, 255, 0.5), rgba(77, 57, 255, 0.5));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 30px 0;
+}
+
+.mission-vision-card {
+  background-color: transparent;
+  text-align: center;
+  padding: 20px;
+}
+
+.mission-vision-card h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mission-vision-card p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .mission-vision-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .mission-vision-card p {
+    font-size: 1rem;
+  }
+}
+
+/* ! start our values style */
+
+.our-values {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+     url('src/assets/aboutUsAll/our-value-bg-mobile.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.border-right {
+  border-right: 1px solid#091d3e;
+  padding-left: 10px;
+}
+
+/* ! end our values style */

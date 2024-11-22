@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+  <img src="/assets/Industries Background/Sport.jpg" alt="Header Image" class="header-image" />
+
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Sports</h1>
+    <p>Industries > Sports</p>
+  </div>
+</div>
+
+<div class="main-container">
+  <!-- Left side: Split Image with overlay text -->
+  <div class="left-side">
+    <div class="split-image-container">
+      <div class="split left"></div>
+      <div class="split right"></div>
+      <div class="overlay-text">
+        <h2>Sports</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side: Text content -->
+  <div class="right-side">
+    <h1>Revolutionizing the Sports Industry with Innovative Solutions</h1>
+    <p>
+      At OpenFuture Technologies Private Limited, we are dedicated to transforming the sports landscape through
+      cutting-edge technology and data-driven solutions. Our comprehensive offerings cater to sports organizations,
+      teams, and fans alike, enhancing performance, engagement, and overall experiences.
+    </p>
+  </div>
+</div>
+
+<div class="sap-offerings-container">
+  <h2 class="sap-heading">Sports Solutions</h2>
+  <div class="sap-offerings-grid">
+    <div class="sap-card" *ngFor="let item of sports">
+      <div class="number-square">{{ item.number }}</div>
+      <h4>{{ item.title }}</h4>
+      <div class="hover-text">{{ item.description }}</div>
+    </div>
+  </div>
+</div>
+
+

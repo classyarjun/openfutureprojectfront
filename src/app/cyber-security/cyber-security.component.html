@@ -1,0 +1,119 @@
+
+<app-navbar></app-navbar>
+
+<!-- Main Header Container -->
+<div class="header-container">
+  <img src="../../assets/header images/Services Images for BG/Cyber Security.jpg" alt="Header Image" class="header-image" />
+  
+  <!-- Centered Content -->
+  <div class="header-content">
+    <h1>Cybersecurity</h1>
+    <p>Industries > Cybersecurity</p>
+  </div>
+</div>
+
+
+  
+
+
+<div class="content-container">
+<!-- Left Side: Split Image with overlay text -->
+<div class="main-container">
+    <div class="split-image-container">
+        <div class="split left"></div>
+        <div class="split right"></div>
+        <div class="overlay-text">
+            <h2>Cybersecurity</h2>
+        </div>
+    </div>
+</div>
+  <!-- Content Section -->
+  <div class="sap-content">
+    <h2>Why Choose OpenFuture for Cybersecurity</h2>
+    <h4>Proactive Threat Detection</h4>
+    <p>
+      Our advanced security solutions use cutting-edge technology to identify and
+mitigate threats before they impact your business.
+    </p>
+    <h4>Customized Security Strategies</h4>
+    <p>
+      We tailor our cybersecurity services to meet your unique business needs,
+ensuring a robust defense that evolves with your organization.
+    </p>
+    <h4>Expert Team of Professionals</h4>
+    <p>
+      Our dedicated cybersecurity experts bring extensive experience and
+      knowledge, ensuring you receive top-notch protection against evolving
+      threats.
+
+    </p>
+    <h4>Compliance and Regulatory Assurance</h4>
+    <p>
+      We help you navigate complex compliance requirements, ensuring your
+      business adheres to industry regulations and standards.
+
+    </p>
+    <h4>Continuous Monitoring and Support</h4>
+    <p>
+      Benefit from round-the-clock monitoring and support, ensuring rapid response
+      to any potential security incidents.
+
+    </p>
+  </div>
+</div>
+
+
+
+<div class="container my-5">
+  <h2 class="text-center text-primary mt-5">Our Cybersecurity Services</h2>
+  <div class="row mt-4">
+    <!-- First row: 3 cards -->
+    <ng-container *ngFor="let card of linuxExpertise.slice(0, 3)">
+      <div class="col-md-4 mb-4">
+        <div class="expertise-card card h-100 p-3 shadow-sm">
+          <h5 class="text-primary">{{ card.title }}</h5>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  
+  <div class="row mt-4 justify-content-center">
+    <!-- Second row: Centered 2 cards -->
+    <ng-container *ngFor="let card of linuxExpertise.slice(3)">
+      <div class="col-md-4 mb-4">
+        <div class="expertise-card card h-100 p-3 shadow-sm">
+          <h5 class="text-primary">{{ card.title }}</h5>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <div class="sap-offerings-container">
+    <h2 class="sap-heading">Key Cybersecurity Solutions We Offer</h2>
+    <div class="sap-offerings-grid">
+        <div class="sap-card" *ngFor="let item of sapOfferings">
+            <div class="number-square">{{ item.number }}</div> 
+            <h4>{{ item.title }}</h4>
+            <div class="info-icon"><span class="material-icons">chevron_right</span></div>
+
+            <div class="hover-text">{{ item.description }}</div>
+        </div>
+    </div>
+</div>
