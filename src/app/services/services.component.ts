@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   export class ServicesComponent implements OnInit {
     currentSlide = 0;
     isSliderVisible = true; // Set slider visibility to true by default
-   
+
     // Service groups array with service objects
     serviceGroups = [
       [
@@ -47,43 +47,43 @@ import { Component, OnInit } from '@angular/core';
         { icon: './assets/SERVICES/Software Testing.jpg', title: 'SOFTER TESTING', description:'Software Testing is the process of evaluating and verifying that a software application or system meets specified requirements and functions correctly. It involves various techniques, including manual testing and automated testing, to identify defects, ensure quality, and enhance user satisfaction before the software is released.' },
         { icon: './assets/SERVICES/Website Development.jpg', title: 'WEBSITE DEVELOPMENT', description:'Website development involves the creation and maintenance of websites, encompassing everything from web design and content creation to programming and database management. It utilizes various technologies and languages, such as HTML, CSS, JavaScript, and server-side languages, to build user-friendly and responsive web experiences that meet business goals.' }
       ],
-   
+
     ];
   group: any;
     slideInterval: any| undefined;
-   
+
   ngOnInit(): void {
     this.isSliderVisible = true; // Show slider when the component is initialized
     this.startSlideShow(); // Start the automatic slider
   }
-   
+
   // Method to update the current slide
   goToSlide(slideIndex: number) {
     this.currentSlide = slideIndex;
     this.resetSlideShow(); // Reset the automatic slider when user interacts
   }
-   
+
   // Calculate the transform property for sliding effect
   getTransform() {
     return `translateX(-${this.currentSlide * 100}%)`;
   }
-   
+
   // Start automatic sliding
   startSlideShow() {
     this.slideInterval = setInterval(() => {
       this.currentSlide = (this.currentSlide + 1) % this.serviceGroups.length; // Move to next slide
     }, 5000); // Change every 5 seconds
   }
-   
+
   // Reset the slideshow when user interacts
   resetSlideShow() {
     clearInterval(this.slideInterval); // Clear the previous interval
     this.startSlideShow(); // Start the slideshow again
   }
-   
+
   ngOnDestroy(): void {
     clearInterval(this.slideInterval); // Clean up the interval when component is destroyed
   }
   }
-   
-   
+
+
