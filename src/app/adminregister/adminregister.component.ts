@@ -72,8 +72,8 @@ export class AdminregisterComponent implements OnInit {
     this.router.navigate(['/adminlogin']);
   }
 
-  navigateToHome(): void {
-    this.router.navigate(['/home']); // Ensure '/home' route exists in your app-routing.module.ts
-  }
+
+
+
 }
 

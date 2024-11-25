@@ -9,7 +9,11 @@
 
   <div class="right-section form-container">
     <!-- Cross Button -->
-    <button class="close-btn" (click)="navigateToHome()">&#10006;</button>
+
+    <a href="">
+      <button class="close-btn" >&#10006;</button>
+    </a>
+
 
     <h2><strong>Admin Register</strong></h2>
     <form [formGroup]="adminForm" (ngSubmit)="onSubmit()">
