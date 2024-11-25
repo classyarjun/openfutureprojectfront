@@ -7,10 +7,13 @@
     <!-- Sidebar -->
     <nav class="col-4 col-md-4 col-lg-2 sidebar sticky-top">
       <div class="text-center my-3">
-        <img
-          src="/assets/admin.png"
-          class="rounded-circle img-fluid p-2" alt="User" style="width: 80px; height: 80px" />
-        <h5 class="text-white">Admin</h5>
+
+        <img *ngIf="adminData.profilePicture" [src]="'data:image/png;base64,' + adminData.profilePicture"
+          alt="Profile Picture" class="rounded-circle img-fluid profile-pic p-1" style="width: 80px; height: 80px" />
+          <h5 class="text-white">{{adminData.name}}</h5>
+
+
+
       </div>
       <hr />
       <ul class="nav flex-column mx-5 ">
@@ -58,10 +61,12 @@
           <!-- <i class="fas fa-bell me-3"></i> -->
           <span class="dropdown-toggle p-2" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
             aria-expanded="false">
-            <img
-              src="/assets/admin.png"
-              class="rounded-circle img-fluid" alt="User" style="width: 40px; height: 40px" />
-           Admin
+
+            <img *ngIf="adminData.profilePicture" [src]="'data:image/png;base64,' + adminData.profilePicture"
+            alt="Profile Picture" class="rounded-circle img-fluid profile-pic" style="width: 40px; height: 40px" />
+
+          {{adminData.name}}
+
           </span>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <!-- <li><a class="dropdown-item" href="#">My Profile</a></li> -->

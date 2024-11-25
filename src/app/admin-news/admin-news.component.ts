@@ -2,6 +2,11 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NewsService } from './../../service/news.service';
 import { News } from 'src/modal/news';
 import { NgForm } from '@angular/forms';
+import { Job } from 'src/modal/job';
+import { JobService } from './../../service/job.service';
+import { HttpClient } from '@angular/common/http';
+
+
 declare var bootstrap: any;
 
 @Component({
@@ -20,11 +25,14 @@ export class AdminNewsComponent implements OnInit {
   newsList: News[] = [];
   newsToDelete: News | null = null;
   newsToEdit: News | null = null;
+  errorMessage: string = ''; // Variable to hold error message
+  adminData: any = null; // To store fetched admin data
 
-  constructor(private newsService: NewsService) {}
+  constructor(private newsService: NewsService,private http: HttpClient) {}
 
   ngOnInit(): void {
     this.loadNews();
+    this.getAdminById(1);
   }
 
   // Fetch news data
@@ -119,4 +127,41 @@ export class AdminNewsComponent implements OnInit {
   }
 
   // Method to load all news (implement this based on your application logic)
+
+
+
+
+  getAdminById(adminId: number) {
+    const url = `http://localhost:9090/api/admin/getAdminById/${adminId}`; // Replace with your backend URL
+
+    this.http.get(url).subscribe(
+      (response: any) => {
+        this.adminData = response; // Assign response to adminData
+
+        this.errorMessage = ''; // Clear error message if any
+
+        console.log('Admin Data:', this.adminData);
+      },
+
+      (error: any) => {
+        this.adminData = null; // Clear admin data if error occurs
+
+        this.errorMessage = 'Failed to fetch admin data. Please try again.';
+
+        console.error('Error fetching admin data:', error);
+      }
+    );
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -1,5 +1,9 @@
 import { ApplyService } from 'src/service/apply.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Job } from 'src/modal/job';
+import { JobService } from './../../service/job.service';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-admin-all-forms',
@@ -10,10 +14,15 @@ export class AdminAllFormsComponent  implements OnInit {
   forms: any[] = []; // Array to hold forms data
   errorMessage: string = ''; // Variable to hold error message
 
-  constructor(private ApplyService: ApplyService) { }
+  adminData: any = null; // To store fetched admin data
+
+
+  constructor(private ApplyService: ApplyService,private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.loadForms(); // Load forms when the component initializes
+    this.loadForms();
+    this.getAdminById(1);
+    // Load forms when the component initializes
   }
 
   loadForms(): void {
@@ -67,6 +76,29 @@ export class AdminAllFormsComponent  implements OnInit {
     } catch (error) {
       console.error('Error decoding Base64 string:', error);
     }
+  }
+
+
+  getAdminById(adminId: number) {
+    const url = `http://localhost:9090/api/admin/getAdminById/${adminId}`; // Replace with your backend URL
+
+    this.http.get(url).subscribe(
+      (response: any) => {
+        this.adminData = response; // Assign response to adminData
+
+        this.errorMessage = ''; // Clear error message if any
+
+        console.log('Admin Data:', this.adminData);
+      },
+
+      (error: any) => {
+        this.adminData = null; // Clear admin data if error occurs
+
+        this.errorMessage = 'Failed to fetch admin data. Please try again.';
+
+        console.error('Error fetching admin data:', error);
+      }
+    );
   }
 
 

@@ -88,7 +88,7 @@ import { FrontNewsComponent } from './front-news/front-news.component';
 import { AdminregisterComponent } from './adminregister/adminregister.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'solutions', component: SolutionsComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'slider', component: SliderComponent },
