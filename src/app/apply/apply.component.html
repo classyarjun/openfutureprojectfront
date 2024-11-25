@@ -21,6 +21,15 @@
         </div>
 
         <div class="form-group">
+          <label for="Position">Position</label>
+          <input id="position" formControlName="position" type="text" class="form-control" required />
+          <div *ngIf="applyForm.controls['position'].invalid && applyForm.controls['position'].touched" class="text-danger">
+            Postion is required.
+          </div>
+        </div>
+
+
+        <div class="form-group">
           <label for="email">Email</label>
           <input id="email" formControlName="email" type="email" class="form-control" required />
           <div *ngIf="applyForm.controls['email'].invalid && applyForm.controls['email'].touched" class="text-danger">
@@ -85,4 +94,3 @@
   </div>
 </div>
 
- 

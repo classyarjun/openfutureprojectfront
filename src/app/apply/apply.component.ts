@@ -16,6 +16,7 @@ export class ApplyComponent {
     this.applyForm = this.fb.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
+      position: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       country: ['', Validators.required],
       mobileNumber: ['', Validators.required],
@@ -58,4 +59,3 @@ export class ApplyComponent {
   }
 }
 
- 
