@@ -5,12 +5,8 @@
   box-sizing: border-box;
 }
 
-/* Body and HTML styles */
-html, body {
-  height: 100%;
-  overflow-x: hidden;
-  font-family: 'Poppins', sans-serif;
-}
+
+
 /* Social Media Icon Styling */
 .social-media a {
   color: white; /* Set icon color to white */
@@ -26,7 +22,7 @@ html, body {
 
 /* Base Footer Styling */
 .footer {
-  padding: 5vh 2%;
+  padding: 1rem;
   color: white;
   background-image: url('src/assets/Recruitment Fraud Alert/product-bg (2).jpg');
   background-size: cover;
@@ -204,3 +200,5 @@ li a:hover {
   opacity: 0.8; /* Slight transparency for a softer look */
 }
 
+
+ 
