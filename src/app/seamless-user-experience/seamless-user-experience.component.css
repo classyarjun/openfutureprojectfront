@@ -479,7 +479,7 @@ opacity: 1;
     position: relative;
     background-color: #f0f3f5;
     border: 1px solid #e0e0e0;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     transition: transform 0.3s;
     cursor: pointer;
@@ -587,7 +587,7 @@ opacity: 1;
     border: 1px solid #ddd; /* Light gray border */
     border-bottom: 10px solid #1d71b8; /* Blue border at the top */
     border-radius: 8px; /* Rounded corners */
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
