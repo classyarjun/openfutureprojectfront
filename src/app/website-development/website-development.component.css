@@ -107,7 +107,7 @@ body {
   position: relative;
   display: flex;
   width: 100%; /* Make it responsive */
-  height: 525px; /* Set desired height */
+  height: 405px; /* Set desired height */
   aspect-ratio: 5 / 4; /* Maintain a 5:4 aspect ratio */
   gap: 2px; /* Small gap between the halves */
   overflow: hidden;

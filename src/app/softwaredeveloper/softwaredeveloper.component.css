@@ -51,43 +51,41 @@ body {
 /* Animations */
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 @keyframes slideUp {
   from {
-      transform: translateY(30px);
-      opacity: 0;
+    transform: translateY(30px);
+    opacity: 0;
   }
   to {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 /* Main Container */
 .main-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
   padding: 40px;
-  flex-direction: row-reverse; /* Reverses order to make image on the right */
-  gap: 20px;
   flex-wrap: wrap;
+  flex-direction: row; /* Image on left, text on right */
 }
 
 /* Container for the split image effect */
 .split-image-container {
   position: relative;
   display: flex;
-  width: 600px; /* Set desired width */
-  height: 525px; /* Set desired height */
-  aspect-ratio: 5 / 4; /* Maintain a 5:4 aspect ratio */
-  gap: 2px; /* Small gap between the halves */
+  width: 600px;
+  height: 400px;
+  aspect-ratio: 5 / 4;
+  gap: 2px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -95,57 +93,24 @@ body {
 /* Common styles for both image halves */
 .split {
   flex: 1;
-  background-image: url('../../assets/Services page images/Software Developersplit.jpg'); /* Use the image as a background */
-  background-size: 200% 100%; /* Double the width to show only half on each side */
+   background-image: url('../../assets/Services page images/Software Developersplit.jpg');
+  background-size: 200% 100%;
   background-repeat: no-repeat;
 }
 
-/* Style for the left half */
 .split.left {
-  clip-path: inset(40px 5% 1px 1px); /* Crop from all sides */
+  clip-path: inset(40px 5% 1px 1px);
   background-position: left center;
 }
 
-/* Style for the right half */
 .split.right {
-  clip-path: inset(1px 1px 40px 5%); /* Crop from all sides */
+  clip-path: inset(1px 1px 40px 5%);
   background-position: right center;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 600px) {
-  .split-image-container {
-      max-width: 100%; /* Full width on smaller screens */
-      height: auto; /* Adjust height automatically */
-  }
-
-  /* Adjusting the clipping paths for smaller devices */
-  .split.left {
-      clip-path: inset(0); /* Less cropping */
-  }
-
-  .split.right {
-      clip-path: inset(0); /* Less cropping */
-  }
-}
-
-@media (max-width: 400px) {
-  .split-image-container {
-      aspect-ratio: 16 / 9;
-  }
-
-  .split.left {
-      clip-path: inset(0); /* Further reduce cropping */
-  }
-
-  .split.right {
-      clip-path: inset(0); /* Further reduce cropping */
-  }
 }
 
 /* Overlay text positioned on top of the split image */
 .overlay-text {
-  position: absolute;
+  position:absolute;
   bottom: 20px;
   left: 20px;
   background-color: rgba(0, 0, 50, 0.7);
@@ -160,7 +125,7 @@ body {
   opacity: 1;
 }
 
-/* Right Side: Text Content */
+/* Text Content Styling */
 .right-side {
   width: 45%;
 }
@@ -233,48 +198,8 @@ body {
   line-height: 1.6;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .main-container {
-      flex-direction: column;
-  }
-
-  .split-image-container,
-  .right-side {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-
-  .header-content h1 {
-      font-size: 2rem;
-  }
-
-  .header-content p {
-      font-size: 1rem;
-  }
-
-  .features-grid {
-      flex-direction: column;
-  }
-
-  .feature-card {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header-content h1 {
-      font-size: 1.5rem;
-  }
-
-  .header-content p {
-      font-size: 0.9rem;
-  }
-}
-
- /* Main container styling */
- .sap-offerings-container {
+/* SAP Offerings Container */
+.sap-offerings-container {
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -282,13 +207,13 @@ body {
 }
 
 .sap-heading {
-  color: #1d71b8;
+  color: #07b5e0;
   font-size: 2.5rem;
   margin-bottom: 40px;
   font-weight: bold;
 }
 
-/* Grid Layout */
+/* SAP Offerings Grid */
 .sap-offerings-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -297,51 +222,15 @@ body {
 
 .sap-card {
   background-color: #fff;
-  border: 1px solid #ddd; /* Light gray border */
-  border-bottom: 10px solid #1d71b8; /* Blue border at the top */
-  border-radius: 8px; /* Rounded corners */
-  padding: 35px;
+  border: 1px solid #ddd;
+  border-bottom: 10px solid #1d71b8;
+  border-radius: 8px;
+  padding: 40px;
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
-  overflow: hidden; /* Ensure the hover-text stays inside the card */
-  margin-bottom: -1px; /* Negative margin to overlap with the next card */
+  overflow: hidden;
 }
-
-.sap-offerings-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
-  gap: 20px; /* Space between cards */
-}
-
-/* Adjustments for responsiveness */
-@media (max-width: 768px) {
-  .sap-offerings-grid {
-      grid-template-columns: repeat(2, 1fr); /* For smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .sap-offerings-grid {
-      grid-template-columns: 1fr; /* For extra small screens */
-  }
-}
-
-/* Square Container */
-.number-square {
-  width: 40px; /* Set the width for the square */
-  height: 40px; /* Set the height for the square */
-  background-color: #1d71b8; /* Background color for the square */
-  color: white; /* Text color */
-  display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  border-radius: 5px; /* Optional: for slightly rounded corners */
-  font-size: 1.5rem; /* Font size for the number */
-  font-weight: bold; /* Bold font */
-  margin: 0 auto 15px auto; /* Center the square in the card */
-}
-
 
 .sap-card h4 {
   font-size: 1.2rem;
@@ -349,38 +238,34 @@ body {
   margin-bottom: 20px;
 }
 
-.info-icon {
-  width: 30px;
-  height: 30px;
+.number-square {
+  width: 40px;
+  height: 40px;
   background-color: #1d71b8;
   color: white;
-  font-size: 1.2rem;
-  line-height: 30px;
-  border-radius: 50%;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 15px auto;
 }
 
-.sap-card:hover {
-  transform: translateY(-5px);
-  transition: all 0.3s ease-in-out;
-}
-
-/* Hover text styling */
 .hover-text {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(47, 9, 216, 0.9); /* Blue color with slight transparency */
+  background-color: rgba(44, 41, 54, 0.815);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* Prevent the hover text from being clickable */
-  z-index: 1;
+  pointer-events: none;
   font-size: 1.2rem;
   text-align: center;
   padding: 10px;
@@ -392,22 +277,50 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .main-container {
+      flex-direction: column;
+  }
+
+  .right-side,
+  .left-side {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .features-grid {
+      flex-direction: column;
+  }
+
+  .feature-card,
+  .sap-card {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
   .sap-offerings-grid {
-    grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
+  .split-image-container {
+width: 350px;
+
+  }
+  .header-content h1 {
+      font-size: 1.5rem;
+  }
+
+  .header-content p {
+      font-size: 0.9rem;
+  }
+
   .sap-offerings-grid {
-    grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
   }
 }
-.info-icon {
-  width: 30px;
-  height: 30px;
-
-  font-size: 1.5rem; /* Adjust the size as needed */
-  display: inline-block;
-  margin-top: 4px; /* Optional: add spacing */
+.right-side h1, .sap-heading {
+  background: linear-gradient(90deg, #08086d, #4a90e2, #bad7f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-

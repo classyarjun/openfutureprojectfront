@@ -95,6 +95,7 @@ import { AdminService } from 'src/service/admin.service';
 
 import { AdminregisterComponent } from './adminregister/adminregister.component';
 import { LoginComponent } from './login/login.component';
+import { FounderComponent } from './founder/founder.component';
 
 
 @NgModule({
@@ -188,7 +189,8 @@ import { LoginComponent } from './login/login.component';
     FrontNewsComponent,
     FrontBlogsComponent,
     AdminregisterComponent,
-    LoginComponent
+    LoginComponent,
+    FounderComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule,FormsModule,ReactiveFormsModule],
   providers: [AdminService],

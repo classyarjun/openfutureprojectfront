@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff; /* Light gray background color */
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px; /* Add spacing between sections */
+  transition: transform 0.3s ease-in-out; /* Animation effect */
+}
+.container:hover {
+transform: scale(1.02); /* Slightly scale the container on hover */
+}
+
+h1.subtitle {
+font-size: 40px;
+color: #000000;
+margin-bottom: 10px;
+text-transform: uppercase;
+animation: fadeInDown 1s ease-in-out;
+}
+
+h1.name {
+font-size: 36px;
+color: #000;
+font-weight: bold;
+margin-bottom: 20px;
+animation: fadeInDown 1.2s ease-in-out;
+}
+
+.ceo-details, .director-details {
+max-width: 100%;
+text-align: left;
+padding: 50px;
+background-color: #d6f5ff; /* Background color */
+border-radius: 10px; /* Rounded corners */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.ceo-details:hover, .director-details:hover {
+background-color: #bce7ff; /* Change background on hover */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deepen shadow on hover */
+}
+
+.ceo-image, .director-image {
+width: 100%; /* Responsive image */
+height: auto; /* Maintain aspect ratio */
+max-width: 600px; /* Maximum image width */
+border-radius: 5%; /* Rounded corners */
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Image shadow */
+}
+
+.ceo-image:hover, .director-image:hover {
+transform: scale(1.05); /* Slightly enlarge image on hover */
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Typography */
+.name {
+font-weight: 700;
+font-size: 2rem; /* Font size for large screens */
+transition: color 0.3s ease-in-out; /* Smooth transition for color */
+}
+
+.subtitle {
+font-size: 30px; /* Subtitle font size */
+color: #0a0a0a;
+font-weight: 700; /* Bold */
+margin-bottom: 20px;
+text-transform: uppercase;
+transition: color 0.3s ease-in-out;
+}
+
+.companies {
+  font-size: 1rem; /* Company details */
+  font-weight: 400;
+  color: #080a0a;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.6; /* Improve readability */
+  font-size: 1.1rem; /* Adjusted font size */
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+.ceo-details, .director-details {
+    text-align: center; /* Center text for smaller screens */
+    padding: 30px; /* Reduce padding on mobile */
+}
+
+.name {
+    font-size: 20px; /* Adjust font size for mobile */
+}
+
+.subtitle {
+    font-size: 24px; /* Adjust subtitle font size for mobile */
+}
+
+.ceo-image, .director-image {
+    max-width: 100%; /* Ensure full width on mobile */
+    border-radius: 10px; /* Increase rounding on smaller screens */
+}
+}
+
+.director-image {
+  max-height: 32rem; /* Set the maximum height for the image */
+  width: auto; /* Automatically adjust width to maintain aspect ratio */
+  object-fit: cover; /* Ensure the image maintains a proper aspect ratio without distortion */
+}
+
+.ceo-image
+{
+  max-height: 32rem;/* Set the maximum height for the image */
+  width: auto; /* Automatically adjust width to maintain aspect ratio */
+  object-fit: cover;
+}

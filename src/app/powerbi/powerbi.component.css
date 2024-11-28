@@ -83,7 +83,7 @@ body {
   position: relative;
   display: flex;
   width: 600px;
-  height: 525px;
+  height: 400px;
   aspect-ratio: 5 / 4;
   gap: 2px;
   overflow: hidden;

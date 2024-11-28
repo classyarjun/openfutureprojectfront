@@ -12,9 +12,9 @@ interface Offering {
 })
 export class DigitalmarketingComponent {
   Digitalmarketing: Offering[] = [];
- 
+
   constructor() { }
- 
+
   // OnInit lifecycle hook to initialize data
   ngOnInit(): void {
     // Populate the computingsoftware array with data
@@ -31,17 +31,17 @@ export class DigitalmarketingComponent {
       },
       {
         number: 3,
-        title: '● Social Media Marketing',
+        title: 'Social Media Marketing',
         description: ' We create engaging social media strategies that foster community interaction and brand loyalty across platforms like Facebook, Instagram, LinkedIn, and Twitter.'
       },
       {
         number: 4,
-        title: '●Content Marketing',
+        title: 'Content Marketing',
         description: ' Our team produces high-quality, relevant content that resonates with your audience, boosting brand awareness and establishing your authority in the industry.'
       },
       {
         number: 5,
-        title: '● Email Marketing',
+        title: 'Email Marketing',
         description: 'We design personalized email campaigns that nurture leads and encourage conversions, delivering the right message to the rightaudience.'
       },
       {

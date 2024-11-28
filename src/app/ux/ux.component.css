@@ -73,7 +73,7 @@ body {
 .split-image-container {
   position: relative;
   display: flex;
-  width: 600px;
+  width: 400px;
   height: 525px;
   aspect-ratio: 5 / 4;
   gap: 2px;

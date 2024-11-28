@@ -99,7 +99,7 @@ body {
 /* Common styles for both image halves */
 .split {
   flex: 1;
-  background-image: url('../../assets/Industries Background/BFSI.jpg'); /* Use the image as a background */
+  background-image: url('../../assets/BFSIsplit.jpg'); /* Use the image as a background */
   background-size: 200% 100%; /* Double the width to show only half on each side */
   background-repeat: no-repeat;
 }

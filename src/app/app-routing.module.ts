@@ -86,6 +86,7 @@ import { ApplyComponent } from './apply/apply.component';
 import { FrontBlogsComponent } from './front-blogs/front-blogs.component';
 import { FrontNewsComponent } from './front-news/front-news.component';
 import { AdminregisterComponent } from './adminregister/adminregister.component';
+import { FounderComponent } from './founder/founder.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -179,6 +180,10 @@ const routes: Routes = [
   { path: 'apply', component: ApplyComponent },
   { path: 'adminregister', component: AdminregisterComponent },
   { path: 'adminlogin', component: LoginComponent },
+  { path: 'founder', component: FounderComponent },
+
+
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
