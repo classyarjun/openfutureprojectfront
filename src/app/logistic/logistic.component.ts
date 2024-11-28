@@ -47,11 +47,7 @@ export class LogisticComponent {
         title: 'Integration with Third-Party Providers',
         description: 'Ensure seamless integration with third-party logistics (3PL) providers, enhancing service offerings and expanding logistics capabilities without additional overhead.'
       },
-      {
-        number: 7,
-        title: 'Last-Mile Delivery Solutions',
-        description: 'Design efficient last-mile delivery systems that optimize routes and reduce delivery times, ensuring a positive customer experience and increased satisfaction.'
-      }
+
     ];
   }
 }

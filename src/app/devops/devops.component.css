@@ -95,9 +95,7 @@
   gap: 2rem;
   max-width: 1600px;
   margin: 0 auto;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 /* Left text container styling */
@@ -204,7 +202,7 @@ margin: 0 auto;
 /* Common styles for both image halves */
 .split {
 flex: 1;
-background-image: url('../../assets/header images/Services Images for BG/DevOps.jpg'); /* Use the image as a background */
+background-image: url('../../assets/Services page images/Devops.jpg'); /* Use the image as a background */
 background-size: 200% 100%; /* Double the width to show only half on each side */
 background-repeat: no-repeat;
 }
@@ -239,6 +237,9 @@ background-position: right center;
 }
 
 @media (max-width: 400px) {
+  .main-container {
+    width: 380px;
+  }
 .split-image-container {
   aspect-ratio: 16 / 9;
 }
@@ -490,7 +491,7 @@ opacity: 1;
 .info-icon {
   width: 30px;
   height: 30px;
- 
+
   font-size: 1.5rem; /* Adjust the size as needed */
   display: inline-block;
   margin-top: 4px; /* Optional: add spacing */

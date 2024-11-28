@@ -117,7 +117,7 @@ body {
 /* Common styles for both image halves */
 .split {
   flex: 1;
-  background-image: url('../../assets/header images/Services Images for BG/Website Development.jpg'); /* Use the image as a background */
+  background-image: url('../../assets/Services page images/Website Developmentsplit.jpg'); /* Use the image as a background */
   background-size: 200% 100%; /* Double the width to show only half on each side */
   background-repeat: no-repeat;
 }

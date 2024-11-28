@@ -82,7 +82,7 @@ body {
 
 .split {
   flex: 1;
-  background-image: url('../../assets/header images/Services Images for BG/Responsive UIUX.jpg');
+  background-image: url('../../assets/Services page images/UI_UX.jpg');
   background-size: 200% 100%;
   background-repeat: no-repeat;
 }
@@ -293,6 +293,11 @@ body {
 }
 
 @media (max-width: 480px) {
+  .split-image-container {
+
+    width: 360px;
+  }
+
   .header-content h1 { font-size: 1.5rem; }
   .header-content p { font-size: 0.9rem; }
 }

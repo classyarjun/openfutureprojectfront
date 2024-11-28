@@ -5,7 +5,7 @@
     height: 80vh;
     overflow: hidden;
   }
-   
+
   /* Full-size background image */
   .header-image {
     width: 100%;
@@ -16,7 +16,7 @@
     left: 0;
     z-index: -1;
   }
-   
+
   /* Centered content */
   .header-content {
     display: flex;
@@ -31,18 +31,18 @@
     transform: translate(-50%, -50%);
     padding: 1rem;
   }
-   
+
   /* Heading and subtitle styling */
   .header-content h1 {
     font-size: 3rem;
     margin: 0.5rem 0;
   }
-   
+
   .header-content p {
     font-size: 1.5rem;
     margin: 0.5rem 0 1.5rem;
   }
-   
+
   /* Responsive form styling */
   .header-form {
     display: flex;
@@ -50,7 +50,7 @@
     width: 100%;
     max-width: 400px;
   }
-   
+
   .header-form input {
     padding: 0.75rem;
     margin-bottom: 0.75rem;
@@ -58,7 +58,7 @@
     border-radius: 5px;
     font-size: 1rem;
   }
-   
+
   .header-form button {
     padding: 0.75rem;
     font-size: 1.2rem;
@@ -69,23 +69,23 @@
     cursor: pointer;
     transition: background-color 0.3s;
   }
-   
+
   .header-form button:hover {
     background-color: #0056b3;
   }
-   
+
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .header-content h1 {
       font-size: 2rem;
     }
-   
+
     .header-content p {
       font-size: 1.2rem;
     }
   }
-   
-   
+
+
   /* Main content container */
   .content-container {
     display: flex;
@@ -95,18 +95,16 @@
     gap: 2rem;
     max-width: 1600px;
     margin: 0 auto;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
   }
-   
+
   /* Left text container styling */
   .text-container {
     flex: 1;
     max-width: 55%;
     font-family: Arial, sans-serif;
   }
-   
+
   .text-container h1 {
     font-size: 2.1
     rem;
@@ -114,14 +112,14 @@
     color: #080707;
     font-weight: bold;
   }
-   
+
   .text-container p {
     font-size: 1.1rem;
     color: #4d4d4d;
     line-height: 1.7;
     margin-bottom: 1rem;
   }
-   
+
   /* Image container */
   .image-card {
     position: relative;
@@ -129,7 +127,7 @@
     max-width: 500px; /* Adjust as per your design */
     margin: 0 auto;
   }
-   
+
   .content-image {
     width: 100%;
     height: auto;
@@ -138,7 +136,7 @@
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-   
+
   /* Overlay text box */
   .overlay-text {
     position: absolute;
@@ -152,8 +150,8 @@
     border-radius: 4px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   }
-   
-   
+
+
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .content-container {
@@ -161,26 +159,26 @@
       padding: 2rem;
       text-align: center;
     }
-   
+
     .text-container, .image-container {
       max-width: 100%;
     }
-   
+
     .image-label {
       bottom: 10px;
       right: 50%;
       transform: translateX(50%);
     }
-   
+
     .text-container h1 {
       font-size: 1.8rem;
     }
-   
+
     .text-container p {
       font-size: 1rem;
     }
   }
-   
+
   /* Main Container */
   .main-container {
   display: flex;
@@ -188,7 +186,7 @@
   padding: 40px;
   flex-wrap: wrap;
   }
-   
+
   /* Container for the split image effect */
   .split-image-container {
   position: relative;
@@ -200,60 +198,63 @@
   overflow: hidden;
   margin: 0 auto;
   }
-   
+
   /* Common styles for both image halves */
   .split {
   flex: 1;
-  background-image: url('../../assets/header images/Services Images for BG/Python.jpg'); /* Use the image as a background */
+  background-image: url('../../assets/Services page images/Pythonsplit.jpg'); /* Use the image as a background */
   background-size: 200% 100%; /* Double the width to show only half on each side */
   background-repeat: no-repeat;
   }
-   
+
   /* Style for the left half */
   .split.left {
   clip-path: inset(40px 5% 1px 1px); /* Crop from all sides */
   background-position: left center;
   }
-   
+
   /* Style for the right half */
   .split.right {
   clip-path: inset(1px 1px 40px 5%); /* Crop from all sides */
   background-position: right center;
   }
-   
+
   /* Media Queries for Responsiveness */
   @media (max-width: 600px) {
   .split-image-container {
     max-width: 100%; /* Full width on smaller screens */
     height: auto; /* Adjust height automatically */
   }
-   
+
   /* Adjusting the clipping paths for smaller devices */
   .split.left {
     clip-path: inset(0); /* Less cropping */
   }
-   
+
   .split.right {
     clip-path: inset(0); /* Less cropping */
   }
   }
-   
+
   @media (max-width: 400px) {
+    .main-container{
+      width: 380px;
+    }
   .split-image-container {
     aspect-ratio: 16 / 9;
   }
-   
+
   .split.left {
     clip-path: inset(0); /* Further reduce cropping */
   }
-   
+
   .split.right {
     clip-path: inset(0); /* Further reduce cropping */
   }
   }
-   
-   
-   
+
+
+
   /* Overlay text positioned on top of the split image */
   .overlay-text {
   position:absolute;
@@ -266,14 +267,14 @@
   font-weight: bold;
   transition: opacity 0.3s ease;
   }
-   
+
   .overlay-text:hover {
   opacity: 1;
   }
-   
-   
-   
-   
+
+
+
+
   /* Main container for the layout */
   .sap-container {
     display: flex;
@@ -286,7 +287,7 @@
     margin: 0 auto;
     background-color: #f7f7f7;
   }
-   
+
   .sap-image-container {
     position: relative;
     flex: 1;
@@ -294,13 +295,13 @@
     overflow: hidden;
     max-width: 40%;
   }
-   
+
   .sap-image {
     width: 95%;
     height: auto;
     border-radius: 10px;
   }
-   
+
   /* Text overlay on the image */
   .sap-text-overlay {
     position: absolute;
@@ -313,69 +314,69 @@
     font-weight: bold;
     border-radius: 5px;
   }
-   
+
   /* Content section for text */
   .sap-content {
     flex: 1;
     max-width: 60%;
   }
-   
+
   .sap-content h2 {
     font-size: 2rem;
     margin-bottom: 10px;
   }
-   
+
   .sap-content h4 {
     font-size: 1.2rem;
     margin-top: 20px;
     margin-bottom: 10px;
     color: #020202;
   }
-   
+
   .sap-content p {
     font-size: 1rem;
     line-height: 1.5;
     color: #333;
   }
-   
+
   /* Responsiveness */
   @media (max-width: 768px) {
     .sap-container {
       flex-direction: column;
       align-items: center;
     }
-   
+
     .sap-image-container, .sap-content {
       max-width: 100%;
     }
   }
-   
-   
+
+
   .expertise-card {
     border: 2px solid transparent; /* Default transparent border */
     border-radius: 10px; /* Rounded corners */
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   }
-   
+
   .expertise-card:hover {
     transform: translateY(-5px); /* Elevation on hover */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
     border-color: #230b52; /* Blue border on hover */
   }
-   
+
   .text-primary {
     color: #07192c;
   }
-   
+
   h2 {
     font-weight: bold;
     margin-top: 20px;
   }
-   
-   
-   
-   
-   
+
+
+
+
+
   /* Container and Grid Styling */
   .sap-offerings-container {
     max-width: 1200px;
@@ -383,19 +384,19 @@
     padding: 20px;
     text-align: center;
   }
-   
+
   .sap-heading {
     color: #1d71b8;
     font-size: 2rem;
     margin-bottom: 20px;
   }
-   
+
   .sap-offerings-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-   
+
   .sap-card {
     position: relative;
     background-color: #f0f3f5;
@@ -407,17 +408,17 @@
     border-radius: 8px;
     overflow: hidden;
   }
-   
+
   /* Card Hover Animation */
   .sap-card:hover {
     transform: translateY(-10px);
   }
-   
+
   .card-content {
     z-index: 2;
     position: relative;
   }
-   
+
   .number-circle {
     width: 40px;
     height: 40px;
@@ -430,7 +431,7 @@
     font-size: 1.2rem;
     margin: 0 auto 10px auto;
   }
-   
+
   .more-info {
     background-color: #1d71b8;
     color: white;
@@ -442,7 +443,7 @@
     border-radius: 50%;
     margin-top: 10px;
   }
-   
+
   /* Overlay Text Styling */
   .card-overlay {
     position: absolute;
@@ -461,27 +462,27 @@
     font-size: 1rem;
     line-height: 1.5;
   }
-   
+
   /* Show the text on hover */
   .sap-card:hover .card-overlay {
     opacity: 1;
   }
-   
+
   @media (max-width: 768px) {
     .sap-offerings-grid {
       grid-template-columns: 1fr 1fr;
     }
   }
-   
+
   @media (max-width: 480px) {
     .sap-offerings-grid {
       grid-template-columns: 1fr;
     }
   }
-   
-   
-   
-   
+
+
+
+
   /* Main container styling */
   .sap-offerings-container {
     text-align: center;
@@ -489,21 +490,21 @@
     margin: 0 auto;
     padding: 40px 20px;
   }
-   
+
   .sap-heading {
     color: #1d71b8;
     font-size: 2.5rem;
     margin-bottom: 40px;
     font-weight: bold;
   }
-   
+
   /* Grid Layout */
   .sap-offerings-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-   
+
   .sap-card {
     background-color: #fff;
     border: 1px solid #ddd; /* Light gray border */
@@ -516,26 +517,26 @@
     overflow: hidden; /* Ensure the hover-text stays inside the card */
     margin-bottom: -1px; /* Negative margin to overlap with the next card */
   }
-   
+
   .sap-offerings-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
     gap: 20px; /* Space between cards */
   }
-   
+
   /* Adjustments for responsiveness */
   @media (max-width: 768px) {
     .sap-offerings-grid {
         grid-template-columns: repeat(2, 1fr); /* For smaller screens */
     }
   }
-   
+
   @media (max-width: 480px) {
     .sap-offerings-grid {
         grid-template-columns: 1fr; /* For extra small screens */
     }
   }
-   
+
   /* Square Container */
   .number-square {
     width: 40px; /* Set the width for the square */
@@ -550,14 +551,14 @@
     font-weight: bold; /* Bold font */
     margin: 0 auto 15px auto; /* Center the square in the card */
   }
-   
-   
+
+
   .sap-card h4 {
     font-size: 1.2rem;
     color: #333;
     margin-bottom: 20px;
   }
-   
+
   .info-icon {
     width: 30px;
     height: 30px;
@@ -568,12 +569,12 @@
     border-radius: 50%;
     display: inline-block;
   }
-   
+
   .sap-card:hover {
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
   }
-   
+
   /* Hover text styling */
   .hover-text {
     position: absolute;
@@ -594,18 +595,18 @@
     text-align: center;
     padding: 10px;
   }
-   
+
   .sap-card:hover .hover-text {
     opacity: 1;
   }
-   
+
   /* Responsive Styles */
   @media (max-width: 768px) {
     .sap-offerings-grid {
       grid-template-columns: 1fr 1fr;
     }
   }
-   
+
   @media (max-width: 480px) {
     .sap-offerings-grid {
       grid-template-columns: 1fr;
@@ -614,9 +615,8 @@
   .info-icon {
     width: 30px;
     height: 30px;
-   
+
     font-size: 1.5rem; /* Adjust the size as needed */
     display: inline-block;
     margin-top: 4px; /* Optional: add spacing */
   }
-   

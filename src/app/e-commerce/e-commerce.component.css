@@ -410,10 +410,3 @@ body {
 }
 
 
-/* Gradient Heading Styles */
-.right-side h1, .sap-heading {
-background: linear-gradient(90deg, #08086d, #4a90e2, #bad7f4);
-/* -webkit-background-clip: text; */
--webkit-text-fill-color: transparent;
-}
-

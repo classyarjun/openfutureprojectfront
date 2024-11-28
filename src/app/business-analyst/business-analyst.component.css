@@ -95,9 +95,6 @@
   gap: 2rem;
   max-width: 1600px;
   margin: 0 auto;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Left text container styling */
@@ -204,7 +201,7 @@ margin: 0 auto;
 /* Common styles for both image halves */
 .split {
 flex: 1;
-background-image: url('src/assets/SERVICES/Business Analyst.jpg'); /* Use the image as a background */
+background-image: url('../../assets/Services page images/BUSINESS ANALYST.jpg'); /* Use the image as a background */
 background-size: 200% 100%; /* Double the width to show only half on each side */
 background-repeat: no-repeat;
 }
@@ -239,6 +236,9 @@ background-position: right center;
 }
 
 @media (max-width: 400px) {
+  .main-container {
+    width: 380px;
+  }
 .split-image-container {
   aspect-ratio: 16 / 9;
 }

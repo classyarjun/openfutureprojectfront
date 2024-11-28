@@ -95,7 +95,7 @@ body {
 /* Common styles for both image halves */
 .split {
   flex: 1;
-  background-image: url('../../assets/header images/Services Images for BG/Software Developer.jpg'); /* Use the image as a background */
+  background-image: url('../../assets/Services page images/Software Developersplit.jpg'); /* Use the image as a background */
   background-size: 200% 100%; /* Double the width to show only half on each side */
   background-repeat: no-repeat;
 }
@@ -273,8 +273,8 @@ body {
   }
 }
 
-/* Main container styling */
-.sap-offerings-container {
+ /* Main container styling */
+ .sap-offerings-container {
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -282,7 +282,7 @@ body {
 }
 
 .sap-heading {
-  color: #07b5e0;
+  color: #1d71b8;
   font-size: 2.5rem;
   margin-bottom: 40px;
   font-weight: bold;
@@ -297,39 +297,117 @@ body {
 
 .sap-card {
   background-color: #fff;
-  border: 1px solid #ddd;
-  border-bottom: 10px solid #1d71b8;
-  border-radius: 8px;
-  padding: 20px;
+  border: 1px solid #ddd; /* Light gray border */
+  border-bottom: 10px solid #1d71b8; /* Blue border at the top */
+  border-radius: 8px; /* Rounded corners */
+  padding: 35px;
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
-  overflow: hidden;
-  margin-bottom: -1px;
+  overflow: hidden; /* Ensure the hover-text stays inside the card */
+  margin-bottom: -1px; /* Negative margin to overlap with the next card */
 }
 
-/* Responsive Styles */
+.sap-offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+  gap: 20px; /* Space between cards */
+}
+
+/* Adjustments for responsiveness */
 @media (max-width: 768px) {
   .sap-offerings-grid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr); /* For smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .sap-offerings-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr; /* For extra small screens */
   }
+}
+
+/* Square Container */
+.number-square {
+  width: 40px; /* Set the width for the square */
+  height: 40px; /* Set the height for the square */
+  background-color: #1d71b8; /* Background color for the square */
+  color: white; /* Text color */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  border-radius: 5px; /* Optional: for slightly rounded corners */
+  font-size: 1.5rem; /* Font size for the number */
+  font-weight: bold; /* Bold font */
+  margin: 0 auto 15px auto; /* Center the square in the card */
+}
+
+
+.sap-card h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .info-icon {
   width: 30px;
   height: 30px;
-  font-size: 1.5rem;
+  background-color: #1d71b8;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 30px;
+  border-radius: 50%;
   display: inline-block;
-  margin-top: 4px;
 }
-.right-side h1, .sap-heading {
-  background: linear-gradient(90deg, #08086d, #4a90e2, #bad7f4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.sap-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
 }
+
+/* Hover text styling */
+.hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(47, 9, 216, 0.9); /* Blue color with slight transparency */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* Prevent the hover text from being clickable */
+  z-index: 1;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.sap-card:hover .hover-text {
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sap-offerings-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .sap-offerings-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.info-icon {
+  width: 30px;
+  height: 30px;
+
+  font-size: 1.5rem; /* Adjust the size as needed */
+  display: inline-block;
+  margin-top: 4px; /* Optional: add spacing */
+}
+

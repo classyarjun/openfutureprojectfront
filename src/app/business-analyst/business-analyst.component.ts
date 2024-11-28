@@ -26,11 +26,7 @@ export class BusinessAnalystComponent {
       title: 'Risk & Gap Analysis',
       description: 'Identify potential risks and areas for improvement before they impact your operations.',
     },
-    {
-      number: 4,
-      title: 'IT & Business Alignment',
-      description: 'Ensure that technology solutions align with your business goals and offer real value.',
-    },
+  
 
 
   ];

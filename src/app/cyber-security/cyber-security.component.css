@@ -204,7 +204,7 @@ margin: 0 auto;
 /* Common styles for both image halves */
 .split {
 flex: 1;
-background-image: url('../../assets/header images/Services Images for BG/Cyber Security.jpg'); /* Use the image as a background */
+background-image: url('../../assets/Services page images/CYBER SECURITY.jpg'); /* Use the image as a background */
 background-size: 200% 100%; /* Double the width to show only half on each side */
 background-repeat: no-repeat;
 }
@@ -239,6 +239,9 @@ background-position: right center;
 }
 
 @media (max-width: 400px) {
+  .main-container {
+    width: 380px;
+  }
 .split-image-container {
   aspect-ratio: 16 / 9;
 }
@@ -509,7 +512,7 @@ h2 {
 .info-icon {
   width: 30px;
   height: 30px;
- 
+
   font-size: 1.5rem; /* Adjust the size as needed */
   display: inline-block;
   margin-top: 4px; /* Optional: add spacing */

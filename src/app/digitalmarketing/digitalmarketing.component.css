@@ -39,7 +39,7 @@ body {
 }
 
 .header-content h1 {
-  font-size: 4rem;
+  /* font-size: 4rem; */
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -102,7 +102,7 @@ body {
 /* Common styles for both image halves */
 .split {
   flex: 1;
-  background-image: url('../../assets/header images/Services Images for BG/Digital Marketing.jpg'); /* Use the image as a background */
+  background-image: url('../../assets/Services page images/Digital Marketing.jpg'); /* Use the image as a background */
   background-size: 200% 100%; /* Double the width to show only half on each side */
   background-repeat: no-repeat;
 }
@@ -285,7 +285,7 @@ body {
 .info-icon {
   width: 30px;
   height: 30px;
- 
+
   font-size: 1.5rem; /* Adjust the size as needed */
   display: inline-block;
   margin-top: 4px; /* Optional: add spacing */

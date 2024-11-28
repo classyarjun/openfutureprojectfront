@@ -12,9 +12,9 @@ interface Offering {
 })
 export class ECommercedevelopmentComponent {
   ecommercedevelopment: Offering[] = [];
- 
+
   constructor() { }
- 
+
   // OnInit lifecycle hook to initialize data
   ngOnInit(): void {
     // Populate the computingsoftware array with data
@@ -22,7 +22,7 @@ export class ECommercedevelopmentComponent {
       {
         number: 1,
         title: 'Custom E-commerce Platforms',
-        description: ': We develop bespoke e-commerce solutions that align with your brand identity and business objectives, whether you are launching a new store or upgrading an existing one.'
+        description: 'We develop bespoke e-commerce solutions that align with your brand identity and business objectives, whether you are launching a new store or upgrading an existing one.'
       },
       {
         number: 2,

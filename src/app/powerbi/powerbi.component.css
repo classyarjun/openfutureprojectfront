@@ -93,7 +93,7 @@ body {
 /* Common styles for both image halves */
 .split {
   flex: 1;
-   background-image: url('src/assets/SERVICES/Power BI.jpg');
+   background-image: url('../../assets/Services page images/Power BIsplit.jpg');
   background-size: 200% 100%;
   background-repeat: no-repeat;
 }
@@ -225,7 +225,7 @@ body {
   border: 1px solid #ddd;
   border-bottom: 10px solid #1d71b8;
   border-radius: 8px;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -303,6 +303,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  .split-image-container {
+width: 350px;
+
+  }
   .header-content h1 {
       font-size: 1.5rem;
   }

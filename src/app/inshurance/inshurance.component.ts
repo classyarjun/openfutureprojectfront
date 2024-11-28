@@ -20,7 +20,7 @@ export class InshuranceComponent {
         number: 1,
         title: 'Claims Management Solutions',
         description:
-          'Simplify and expedite the claims process with our intelligent claims management systems. We automate workflows, improve communication, and enhance transparency, ensuring a seamless experience for both insurers and policyholders.',
+          'Simplify and expedite the claims process with our intelligent claims management systems. We automate workflows, improve communication, and enhance transparency.',
       },
 
       {
@@ -29,7 +29,7 @@ export class InshuranceComponent {
         title: 'Underwriting Automation',
 
         description:
-          'Leverage advanced analytics and AI to streamline underwriting processes. Our solutions enhance risk assessment, improve accuracy, and speed up decision-making, allowing insurers to offer tailored products to customers more efficiently.',
+          'Leverage advanced analytics and AI to streamline underwriting processes. Our solutions enhance risk assessment, improve accuracy, and speed up decision-making.',
       },
 
       {

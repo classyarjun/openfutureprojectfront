@@ -11,9 +11,9 @@ interface Offering {
 })
 export class PowerbiComponent {
   Powerbi: Offering[] = [];
- 
+
   constructor() { }
- 
+
   // OnInit lifecycle hook to initialize data
   ngOnInit(): void {
     // Populate the computingsoftware array with data
@@ -31,7 +31,7 @@ export class PowerbiComponent {
       {
         number: 3,
         title: 'Advanced Analytics',
-       description: ' With Power BI robust analytical tools, we help you uncover trends, patterns, and opportunities, driving strategic decision-making. Interactive Visualizations: We create interactive visualizations that allow you to explore your data dynamically, making complex information easy to understand.'
+       description: ' With Power BI robust analytical tools, we help you uncover trends, patterns, and opportunities, driving strategic decision-making. Interactive Visualizations: We create interactive visualizations that allow you to explore your data dynamically.'
       },
       {
         number: 4,
@@ -44,7 +44,7 @@ export class PowerbiComponent {
         title: ' Performance Optimization',
         description: 'Our expertise ensures that your Power BI environment runs smoothly, with fast data processing and optimized performance.'
       },
-      
+
     ];
   }
 }

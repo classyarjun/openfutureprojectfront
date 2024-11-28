@@ -239,7 +239,10 @@ background-position: right center;
 }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+  .main-container{
+    width: 380px;
+        }
 .split-image-container {
   aspect-ratio: 16 / 9;
 }
