@@ -36,7 +36,7 @@ export class AgricultureComponent {
       {
         number: 4,
         title: 'Farm Management Software',
-        description: 'Utilize comprehensive farm management platforms that integrate various agricultural processes, from planting to harvesting. Our software helps farmers track performance and analyze data for continuous improvement.'
+        description: 'Utilize comprehensive farm management platforms that integrate various agricultural processes, from planting to harvesting. Our software helps farmers track performance.'
       },
       {
         number: 5,

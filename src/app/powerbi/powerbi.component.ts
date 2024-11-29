@@ -31,7 +31,7 @@ export class PowerbiComponent {
       {
         number: 3,
         title: 'Advanced Analytics',
-       description: ' With Power BI robust analytical tools, we help you uncover trends, patterns, and opportunities, driving strategic decision-making. Interactive Visualizations: We create interactive visualizations that allow you to explore your data dynamically.'
+       description: ' With Power BI robust analytical tools, we help you uncover trends, patterns, and opportunities, driving strategic decision-making. Interactive Visualizations: We create interactive visualizations.'
       },
       {
         number: 4,

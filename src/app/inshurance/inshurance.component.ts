@@ -56,7 +56,7 @@ export class InshuranceComponent {
         title: 'Policy Management Systems',
 
         description:
-          'Optimize policy administration with our comprehensive management systems. Our solutions enable insurers to manage the entire policy lifecycle—from creation to renewal—ensuring accuracy and compliance with regulations.',
+          'Optimize policy administration with our comprehensive management systems. Our solutions enable insurers to manage the entire policy lifecycle—from creation to renewal—ensuring accuracy.',
       },
 
       {
@@ -65,7 +65,7 @@ export class InshuranceComponent {
         title: 'Data Analytics and Reporting',
 
         description:
-          'Unlock the power of data with our analytics solutions. We help insurers gain valuable insights into customer behavior, market trends, and operational efficiency, driving informed decision-making and strategic planning.',
+          'Unlock the power of data with our analytics solutions. We help insurers gain valuable insights into customer behavior, market trends, and operational efficiency.',
       },
     ];
   }

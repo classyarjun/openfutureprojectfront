@@ -22,12 +22,12 @@ export class RealEstateComponent {
       {
         number: 1,
         title: 'Property Management Systems',
-        description: 'Streamline property management with our comprehensive software solutions. Our systems facilitate tenant management and financial reporting, enabling property managers to operate efficiently.'
+        description: 'Streamline property management with our comprehensive software solutions. Our systems facilitate tenant management and financial reporting.'
       },
       {
         number: 2,
         title: 'Real Estate Marketplaces',
-        description: 'Develop user-friendly platforms that connect buyers, sellers, and renters. Our real estate marketplaces feature advanced search capabilities and detailed property listings to enhance the user experience.'
+        description: 'Develop user-friendly platforms that connect buyers, sellers, and renters. Our real estate marketplaces feature advanced search capabilities.'
       },
       {
         number: 3,

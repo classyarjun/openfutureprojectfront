@@ -26,7 +26,7 @@ export class SoftwaretestingComponent {
       {
         number: 2,
         title: 'Performance Testing',
-        description: 'Our team evaluates the speed, scalability, and stability of your software under various conditions, ensuring optimal performance. Automation Testing: By leveraging automated testing tools, we streamline repetitive testing tasks.'
+        description: 'Our team evaluates the speed, scalability, and stability of your software under various conditions, ensuring optimal performance. Automation Testing: By leveraging automated testing tools.'
       },
       {
         number: 3,

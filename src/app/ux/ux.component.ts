@@ -11,9 +11,9 @@ interface Offering {
 })
 export class UxComponent {
  ux: Offering[] = [];
- 
+
   constructor() { }
- 
+
   // OnInit lifecycle hook to initialize data
   ngOnInit(): void {
     // Populate the computingsoftware array with data
@@ -26,7 +26,7 @@ export class UxComponent {
       {
         number: 2,
         title: 'User-Centered Approach',
-        description: 'Every design decision is guided by user behavior and preferences, resulting in intuitive navigation and enhanced engagement. Interactive Prototyping: Our interactive prototypes allow you to visualize and refine the user experience before development begins.'
+        description: 'Every design decision is guided by user behavior and preferences, resulting in intuitive navigation and enhanced engagement.'
       },
       {
         number: 3,
@@ -43,7 +43,7 @@ export class UxComponent {
         title: 'Consistency Across Platforms',
         description: 'We maintain a unified look and feel for your brand across all digital touchpoints, enhancing user satisfaction and retention.'
       },
-      
+
     ];
   }
 }
