@@ -28,7 +28,7 @@ export class HealthcareComponent {
       {
         number: 2,
         title: 'Telemedicine Platforms',
-        description: 'Expand access to healthcare services with our user-friendly telemedicine solutions that facilitate remote consultations, allowing patients to connect with healthcare professionals from the comfort of their homes.'
+        description: 'Expand access to healthcare services with our user-friendly telemedicine solutions that facilitate remote consultations, allowing patients to connect with healthcare professionals.'
 
       },
       {
