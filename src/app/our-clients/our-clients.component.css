@@ -5,7 +5,7 @@ h4,
 h5,
 h6,
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .image-container {
@@ -29,7 +29,6 @@ p {
   /* Optional: for better visibility */
 }
 
-
 .partners-logos .card {
   background-color: #fff;
   border-radius: 15px;
@@ -50,9 +49,8 @@ p {
 
 .shadow-md {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 16px
+  padding: 16px;
 }
-
 
 /* Card container styling */
 .border-block {
@@ -79,7 +77,6 @@ p {
   object-fit: contain;
   /* Maintains aspect ratio */
 }
-
 
 /* /* Background shape container */
 .shape-left-top,
@@ -110,88 +107,68 @@ p {
   right: 0;
 }
 
-.effects :hover{
-border: 2px solid red;
+.effects :hover {
+  border: 2px solid red;
 }
 
 /* ========================= */
 
 /* Container styling for breadcrumb area */
-
-.breadcrumb-area {
-  padding: 150px 0;
-  /* Space above and below */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* Header Container */
+.header-container {
+  position: relative;
   text-align: center;
+  height: 500px;
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.header-container:hover .header-image {
+  transform: scale(1.1);
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.breadcrumb-area h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+.header-content h1 {
+  font-size: 4rem;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-.breadcrumb-area nav {
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: 500;
+.header-content p {
+  font-size: 2rem;
+  animation: slideUp 1.5s ease-in-out;
 }
 
-.breadcrumb-area nav .breadcrumb {
-  background: transparent;
-  padding: 0;
-  margin-bottom: 0;
-}
-
-.breadcrumb-area nav .breadcrumb li {
-  display: inline;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.breadcrumb-area nav .breadcrumb li.active {
-  color: #fff;
-}
-
-.breadcrumb-area nav .breadcrumb li::after {
-  content: ">";
-  color: rgba(255, 255, 255, 0.8);
-  padding: 0 8px;
-}
-
-.breadcrumb-area nav .breadcrumb li:last-child::after {
-  content: "";
-}
-
-@media (max-width: 768px) {
-  .breadcrumb-area {
-    padding: 60px 0;
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-
-  .breadcrumb-area h1 {
-    font-size: 2rem;
-  }
-
-  .breadcrumb-area nav {
-    font-size: 1rem;
+  to {
+    opacity: 1;
   }
 }
 
-@media (max-width: 480px) {
-  .breadcrumb-area {
-    padding: 40px 0;
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
   }
-
-  .breadcrumb-area h1 {
-    font-size: 1.5rem;
-  }
-
-  .breadcrumb-area nav {
-    font-size: 0.9rem;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
-
-

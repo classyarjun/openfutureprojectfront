@@ -18,7 +18,7 @@ export class SolutionsComponent {
     { title: 'Data-Driven Insights', description: 'Harnessing big data and advanced analytics to provide actionable insights that drive informed business decisions and improve overall performance.' },
     { title: 'AI & Machine Learning', description: 'Implementing AI and machine learning technologies to automate processes, predict trends, and enhance business intelligence for smarter decision-making.' },
     { title: 'Business Automation Solutions', description: 'Streamlining business processes through automation, reducing manual work, improving productivity, and enabling efficient resource management.' },
-    { title: 'Continuous Integration & DevOps', description: 'Automating development pipelines with DevOps practices, ensuring faster deployment, better collaboration, and continuous integration for smoother software development cycles.' },
+    { title: 'Continuous Integration & DevOps', description: 'Automating development pipelines with DevOps practices, ensuring faster deployment, better collaboration, and continuous integration .' },
     { title: 'Scalable Software Architecture', description: 'Designing flexible and scalable software systems that grow with your business, ensuring high performance and adaptability to evolving demands.' },
   ];
 

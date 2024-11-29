@@ -1,7 +1,10 @@
-<div class="solutions-slider-container">
-  <h2 class="section-title">What We Offer</h2>
-  <h3 class="section-subtitle display-2 fw-bold">Our Solutions</h3>
 
+<div class="solutions-slider-container">
+<div class="container py-2">
+  <h5 class="mb-0 text-white fs-5">WHAT WE OFFER</h5>
+  <h3 class="section-subtitle display-4 fw-bold">OUR SOLUTIONS</h3>
+</div>
+<div class="container">
   <div class="slider">
     <!-- Display the current slide -->
     <div *ngFor="let card of slides[currentSlideIndex]" class="card">
@@ -21,5 +24,6 @@
           [class.active]="i === currentSlideIndex"
           (click)="moveToSlide(i)">
     </span>
-  </div>
+</div>
+</div>
 </div>
