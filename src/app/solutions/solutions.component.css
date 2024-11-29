@@ -1,7 +1,5 @@
 /* Base Styles */
 .solutions-slider-container {
-
-
   padding: 40px; /* Increase the padding to give more space inside */
   text-align: left; /* Align content to the left */
   background-image: url('src/assets/bg.png'); /* Replace with your image path */
@@ -18,7 +16,7 @@
 }
 
 .section-subtitle {
-  font-size: 4rem; /* Larger font size */
+  font-size: 3rem; /* Larger font size */
   color: #e0e0e0;
 
   margin-left: 10%; /* Keep left margin */
@@ -30,7 +28,6 @@
   display: flex;
   gap: 50px;
  margin-left: 15%;
-
   padding: 10px;
 
 }

@@ -20,7 +20,8 @@ export class AdminContactsComponent implements OnInit {
   constructor(private contactService: ContactService,private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.getContacts(); this.getAdminById(1);
+    this.getContacts();
+     this.getAdminById(1);
   }
 
   getContacts(): void {

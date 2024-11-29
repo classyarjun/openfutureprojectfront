@@ -106,7 +106,6 @@ export class AdminComponent implements OnInit {
     }
   }
 
-
   getAdminById(adminId: number) {
     const url = `http://localhost:9090/api/admin/getAdminById/${adminId}`; // Replace with your backend URL
 
