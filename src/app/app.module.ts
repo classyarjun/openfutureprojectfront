@@ -53,7 +53,6 @@ import { InshuranceComponent } from './inshurance/inshurance.component';
 import { EducationComponent } from './education/education.component';
 import { GovernmentPublicSectorComponent } from './government-public-sector/government-public-sector.component';
 import { ComputingSoftwareComponent } from './computing-software/computing-software.component';
-import { TestingComponent } from './testing/testing.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { OurLeadershipTeamComponent } from './our-leadership-team/our-leadership-team.component';
 import { OurClientsComponent } from './our-clients/our-clients.component';
@@ -96,6 +95,7 @@ import { AdminService } from 'src/service/admin.service';
 import { AdminregisterComponent } from './adminregister/adminregister.component';
 import { LoginComponent } from './login/login.component';
 import { FounderComponent } from './founder/founder.component';
+import { TestingComponent } from './testing/testing.component';
 
 
 @NgModule({
@@ -151,8 +151,6 @@ import { FounderComponent } from './founder/founder.component';
     EducationComponent,
     GovernmentPublicSectorComponent,
     ComputingSoftwareComponent,
-    TestingComponent,
-
     AboutUsComponent,
     OurLeadershipTeamComponent,
     OurClientsComponent,
@@ -190,7 +188,8 @@ import { FounderComponent } from './founder/founder.component';
     FrontBlogsComponent,
     AdminregisterComponent,
     LoginComponent,
-    FounderComponent
+    FounderComponent,
+    TestingComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule,FormsModule,ReactiveFormsModule],
   providers: [AdminService],
